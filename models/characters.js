@@ -1,5 +1,5 @@
 module.exports = function(sequelize, DataTypes) {
-  var characters = sequelize.define("characters", {
+  var Character = sequelize.define("Character", {
     
     class: {
       type: DataTypes.STRING
@@ -204,6 +204,6 @@ module.exports = function(sequelize, DataTypes) {
 
   });
 
-  return characters;
+  return Character;
   
 };
