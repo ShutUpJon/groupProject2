@@ -99,8 +99,86 @@ module.exports = function(sequelize, DataTypes) {
     currentHP: {
       type: DataTypes.INTEGER
     },
-    tempHP
-      
+    tempHP: {
+      type: DataTypes.INTEGER
+    },
+    hitDice: {
+      type: DataTypes.STRING
+    },
+    successes: {
+      type: DataTypes.INTEGER
+    },
+    failures: {
+      type: DataTypes.INTEGER
+    },
+    weaponName1: {
+      type: DataTypes.STRING
+    },
+    weaponAtk1: {
+      type: DataTypes.STRING
+    },
+    weaponDmg1: {
+      type: DataTypes.TEXT
+    },
+    weaponName2: {
+      type: DataTypes.STRING
+    },
+    weaponAtk2: {
+      type: DataTypes.STRING
+    },
+    weaponDmg2: {
+      type: DataTypes.TEXT
+    },
+    weaponName3: {
+      type: DataTypes.STRING
+    },
+    weaponAtk3: {
+      type: DataTypes.STRING
+    },
+    weaponDmg3: {
+      type: DataTypes.TEXT
+    },
+    copperPiece: {
+      type: DataTypes.INTEGER
+    },
+    silverPiece: {
+      type: DataTypes.INTEGER
+    },
+    electrumPiece: {
+      type: DataTypes.INTEGER
+    },
+    goldPiece: {
+      type: DataTypes.INTEGER
+    },
+    platinumPiece: {
+      type: DataTypes.INTEGER
+    },
+    equipment: {
+      type: DataTypes.TEXT
+    },
+    personalityTraits: {
+      type: DataTypes.TEXT
+    },
+    ideals: {
+      type: DataTypes.TEXT
+    },
+    bonds: {
+      type: DataTypes.TEXT
+    },
+    flaws: {
+      type: DataTypes.TEXT
+    },
+    feature1: {
+      type: DataTypes.TEXt
+    },
+    feature2: {
+      type: DataTypes.TEXt
+    },
+    trait1: {
+      type: DataTypes.TEXt
+    },
+    trait2: {
+      type: DataTypes.TEXt
     },
 
   });
