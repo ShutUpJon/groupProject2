@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <!-- Latest compiled and minified CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <!-- CSS -->
+     <link rel="stylesheet" href="styles.css">
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Character Template</title>
+</head>
+
+<body>
+     <div class="container">
+          <div class="jumbotron jumbotron-fluid">
+               <div class="container">
+                    <h1 class="display-4">DND Character Creation</h1>
+                    <p class="lead"></p>
+               </div>
+          </div>
+
+          <div class="row">
+               <div class="col-xs-12 col-sm-4">
+                    <div class="card bg-light">
+                         <div class="card-header">SAVING THROWS</div>
+                         <div class="card-body">
+                              <form>
+                                   <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                             <div class="row">
+                                                  <div class="col">
+                                                       <label for="strength" class="skills-label">Strength</label>
+                                                       <input type="text" class="form-control skills" name="strength" placeholder="0">
+                                                  </div>
+                                             </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                             <div class="row">
+                                                  <div class="col">
+                                                       <label for="dexterity" class="skills-label">Dexterity</label>
+                                                       <input type="text" class="form-control skills" name="dexterity" placeholder="0">
+                                                  </div>
+                                             </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                             <div class="row">
+                                                  <div class="col">
+                                                       <label for="constitution" class="skills-label">Constitution</label>
+                                                       <input type="text" class="form-control skills" name="constitution" placeholder="0">
+                                                  </div>
+                                             </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                             <div class="row">
+                                                  <div class="col">
+                                                       <label for="intelligence" class="skills-label">Intelligence</label>
+                                                       <input type="text" class="form-control skills" name="intelligence" placeholder="0">
+                                                  </div>
+                                             </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                             <div class="row">
+                                                  <div class="col">
+                                                       <label for="wisdom" class="skills-label">Wisdom</label>
+                                                       <input type="text" class="form-control skills" name="wisdom" placeholder="0">
+                                                  </div>
+                                             </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                             <div class="row">
+                                                  <div class="col">
+                                                       <label for="charisma" class="skills-label">Charisma</label>
+                                                       <input type="text" class="form-control skills" name="charisma" placeholder="0">
+                                                  </div>
+                                             </div>
+                                        </li>
+                                   </ul>
+                              </form>
+                         </div>
+                    </div>
+                    <div class="card bg-light">
+                         <div class="card-header">SKILLS</div>
+                         <div class="card-body">
+                              <form>
+                                   <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                             <div class="row">
+                                                  <div class="col">
+                                                       <label for="acrobatics" class="skills-label">Acrobatics (Dex)</label>
+                                                       <input type="text" class="form-control skills" name="acrobatics" placeholder="0">
+                                                  </div>
+                                             </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                             <div class="row">
+                                                  <div class="col">
+                                                       <label for="animalhandling" class="skills-label">Animal Handling (Wis)</label>
+                                                       <input type="text" class="form-control skills" name="animalhandling" placeholder="0">
+                                                  </div>
+                                             </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                             <div class="row">
+                                                  <div class="col">
+                                                       <label for="arcana" class="skills-label">Arcana (Int)</label>
+                                                       <input type="text" class="form-control skills" name="arcana" placeholder="0">
+                                                  </div>
+                                             </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                             <div class="row">
+                                                  <div class="col">
+                                                       <label for="athletics" class="skills-label">Athletics (Str)</label>
+                                                       <input type="text" class="form-control skills" name="athletics" placeholder="0">
+                                                  </div>
+                                             </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                             <div class="row">
+                                                  <div class="col">
+                                                       <label for="deception" class="skills-label">Deception (Cha)</label>
+                                                       <input type="text" class="form-control skills" name="deception" placeholder="0">
+                                                  </div>
+                                             </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                             <div class="row">
+                                                  <div class="col">
+                                                       <label for="acrobatics" class="skills-label">History (Int)</label>
+                                                       <input type="text" class="form-control skills" name="deception" placeholder="0">
+                                                  </div>
+                                             </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                             <div class="row">
+                                                  <div class="col">
+                                                       <label for="acrobatics" class="skills-label">Insight (Wis)</label>
+                                                       <input type="text" class="form-control skills" name="insight" placeholder="0">
+                                                  </div>
+                                             </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                             <div class="row">
+                                                  <div class="col">
+                                                       <label for="acrobatics" class="skills-label">Intimidation (Cha)</label>
+                                                       <input type="text" class="form-control skills" name="intimidation" placeholder="0">
+                                                  </div>
+                                             </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                             <div class="row">
+                                                  <div class="col">
+                                                       <label for="acrobatics" class="skills-label">Investigation (Int)</label>
+                                                       <input type="text" class="form-control skills" name="investigation" placeholder="0">
+                                                  </div>
+                                             </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                             <div class="row">
+                                                  <div class="col">
+                                                       <label for="acrobatics" class="skills-label">Medicine (Wis)</label>
+                                                       <input type="text" class="form-control skills" name="medicine" placeholder="0">
+                                                  </div>
+                                             </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                             <div class="row">
+                                                  <div class="col">
+                                                       <label for="acrobatics" class="skills-label">Nature (Int)</label>
+                                                       <input type="text" class="form-control skills" name="nature" placeholder="0">
+                                                  </div>
+                                             </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                             <div class="row">
+                                                  <div class="col">
+                                                       <label for="acrobatics" class="skills-label">Perception (Wis)</label>
+                                                       <input type="text" class="form-control skills" name="perception" placeholder="0">
+                                                  </div>
+                                             </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                             <div class="row">
+                                                  <div class="col">
+                                                       <label for="acrobatics" class="skills-label">Performance (Cha)</label>
+                                                       <input type="text" class="form-control skills" name="performance" placeholder="0">
+                                                  </div>
+                                             </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                             <div class="row">
+                                                  <div class="col">
+                                                       <label for="acrobatics" class="skills-label">Persuasion (Cha)</label>
+                                                       <input type="text" class="form-control skills" name="persuasion" placeholder="0">
+                                                  </div>
+                                             </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                             <div class="row">
+                                                  <div class="col">
+                                                       <label for="acrobatics" class="skills-label">Religion (Int)</label>
+                                                       <input type="text" class="form-control skills" name="religion" placeholder="0">
+                                                  </div>
+                                             </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                             <div class="row">
+                                                  <div class="col">
+                                                       <label for="acrobatics" class="skills-label">Sleight of Hand (Dex)</label>
+                                                       <input type="text" class="form-control skills" name="sleightofhand" placeholder="0">
+                                                  </div>
+                                             </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                             <div class="row">
+                                                  <div class="col">
+                                                       <label for="acrobatics" class="skills-label">Stealth (Dex)</label>
+                                                       <input type="text" class="form-control skills" name="stealth" placeholder="0">
+                                                  </div>
+                                             </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                             <div class="row">
+                                                  <div class="col">
+                                                       <label for="acrobatics" class="skills-label">Survival (Dex)</label>
+                                                       <input type="text" class="form-control skills" name="stealth" placeholder="0">
+                                                  </div>
+                                             </div>
+                                        </li>
+                                   </ul>
+                              </form>
+                         </div>
+                    </div>
+               </div>
+               <div class="col-xs-12 col-sm-4">
+                    <div class="row">
+                         <div class="col-sm-4">
+                              <div class="card-group">
+                                   <div class="card">
+                                        <div class="card-body">
+                                             <h5 class="card-title">Armor</h5>
+                                             <p class="card-text"></p>
+                                             <p class="card-text"></p>
+                                             <div class="col">
+                                                  <label for="armor" class="armor-label"></label>
+                                                  <input type="text" class="form-control armor" name="armor" placeholder="0">
+                                             </div>
+
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="col-sm-4">
+                              <div class="card">
+                                   <div class="card-body">
+                                        <h5 class="card-title">Initiative</h5>
+                                        <p class="card-text"></p>
+                                        <p class="card-text"></p>
+                                        <div class="col">
+                                             <label for="iniative" class="iniative-label"></label>
+                                             <input type="text" class="form-control armor" name="iniative" placeholder="0">
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="col-sm-4">
+                              <div class="card">
+                                   <div class="card-body">
+                                        <h5 class="card-title">Speed</h5>
+                                        <p class="card-text"></p>
+                                        <p class="card-text"></small></p>
+                                        <div class="col">
+                                             <label for="speed" class="speed-label"></label>
+                                             <input type="text" class="form-control armor" name="speed" placeholder="0">
+                                        </div>
+                                   </div>
+                              </div>
+                              <br>
+                         </div>
+                         <form>
+                              <div class="form-group">
+                                   <label for="exampleFormControlTextarea1">Current Hit Points</label>
+                                   <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Hit Point Maximum:"></textarea>
+                              </div>
+                              <div class="form-group">
+                                   <label for="exampleFormControlTextarea1">Temporary Hit Points</label>
+                                   <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                              </div>
+                         </form>
+                         <div class="col-sm-6">
+                              <div class="form-group">
+                                   <label for="exampleFormControlTextarea1">Hit Dice</label>
+                                   <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Total:"></textarea>
+                              </div>
+                         </div>
+                         <div class="col-sm-6">
+                              <div class="form-group">
+                                   <label for="exampleFormControlTextarea1">Death Saves</label>
+                                   <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                              </div>
+                         </div>
+
+                    </div>
+                    <div class="card bg-light">
+                         <div class="card-header">SKILLS</div>
+                         <div class="card-body">
+                              <form>
+
+                              </form>
+                         </div>
+                    </div>
+               </div>
+               <div class="col-xs-12 col-sm-4">
+                    <div class="card bg-light">
+                         <div class="card-header">SAVING THROWS</div>
+                         <div class="card-body">
+                              <form>
+
+
+                              </form>
+                         </div>
+                    </div>
+                    <div class="card bg-light">
+                         <div class="card-header">SKILLS</div>
+                         <div class="card-body">
+                              <form>
+
+                              </form>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+
+
+</body>
+
+</html>
