@@ -1,6 +1,27 @@
 module.exports = function(sequelize, DataTypes) {
-  var Character = sequelize.define("Character", {
+  var characters = sequelize.define("characters", {
     
+    class: {
+      type: DataTypes.STRING
+      },
+    level: {
+      type: DataTypes.INTEGER
+      },
+    race: {
+      type: DataTypes.STRING
+      },
+    background: {
+      type: DataTypes.STRING
+      },
+    alignment: {
+      type: DataTypes.STRING
+      },
+    playerName: {
+      type: DataTypes.STRING
+      },
+    XP: {
+      type: DataTypes.INTEGER
+      },
     strength: {
       type: DataTypes.INTEGER
       },
@@ -115,7 +136,7 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING
     },
     weaponAtk1: {
-      type: DataTypes.STRING
+      type: DataTypes.INTEGER
     },
     weaponDmg1: {
       type: DataTypes.TEXT
@@ -124,7 +145,7 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING
     },
     weaponAtk2: {
-      type: DataTypes.STRING
+      type: DataTypes.INTEGER
     },
     weaponDmg2: {
       type: DataTypes.TEXT
@@ -133,7 +154,7 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING
     },
     weaponAtk3: {
-      type: DataTypes.STRING
+      type: DataTypes.INTEGER
     },
     weaponDmg3: {
       type: DataTypes.TEXT
@@ -182,5 +203,7 @@ module.exports = function(sequelize, DataTypes) {
     },
 
   });
-  return Example;
+
+  return characters;
+  
 };
