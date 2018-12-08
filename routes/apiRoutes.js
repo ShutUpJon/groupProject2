@@ -9,6 +9,8 @@ module.exports = function(app) {
   });
 
   // Create a new character
+
+  
   app.post("/api/characters", function(req, res) {
     db.Character.create(req.body).then(function(dbCharacter) {
       res.json(dbCharacter);
