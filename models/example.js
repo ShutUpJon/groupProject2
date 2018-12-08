@@ -190,16 +190,16 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.TEXT
     },
     feature1: {
-      type: DataTypes.TEXt
+      type: DataTypes.TEXT
     },
     feature2: {
-      type: DataTypes.TEXt
+      type: DataTypes.TEXT
     },
     trait1: {
-      type: DataTypes.TEXt
+      type: DataTypes.TEXT
     },
     trait2: {
-      type: DataTypes.TEXt
+      type: DataTypes.TEXT
     },
 
   });
