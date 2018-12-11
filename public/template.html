@@ -14,18 +14,44 @@
 
 <body>
      <div class="container">
-          <div class="jumbotron jumbotron-fluid">
-               <div class="container">
-                    <h1 class="display-4">DND Character Creation</h1>
-                    <p class="lead"></p>
-               </div>
+          <div class="jumbotron">
+               DND CHARACTER SHEET
           </div>
-
+          <form>
+               <div class="form-row">
+                    <div class="col-md-4">
+                         <label for="characterInfo1">CLASS & LEVEL</label>
+                         <input type="text" class="form-control" id="characterInfo1" placeholder="Fighter 1" value="" required>
+                    </div>
+                    <div class="col-md-4">
+                         <label for="characterInfo2">BACKGROUND</label>
+                         <input type="text" class="form-control" id="characterInfo2" placeholder="Folk Hero" value="" required>
+                    </div>
+                    <div class="col-md-4">
+                         <label for="characterInfo3">CHARACTER NAME</label>
+                         <input type="text" class="form-control" id="characterInfo3" placeholder="" value="" required>
+                    </div>
+               </div>
+               <div class="form-row">
+                    <div class="col-md-4">
+                         <label for="characterInfo4">RACE</label>
+                         <input type="text" class="form-control" id="characterInfo4" placeholder="Human" required>
+                    </div>
+                    <div class="col-md-4">
+                         <label for="characterInfo5">ALIGNMENT</label>
+                         <input type="text" class="form-control" id="characterInfo5" placeholder="Lawful Good" required>
+                    </div>
+                    <div class="col-md-4">
+                         <label for="characterInfo6">EXPERIENCE POINTS</label>
+                         <input type="text" class="form-control" id="characterInfo6" placeholder="" required>
+                    </div>
+               </div>
+          </form>
           <div class="row">
                <div class="col-xs-12 col-sm-4">
                     <div class="card bg-light">
-                         <div class="card-header">SAVING THROWS</div>
                          <div class="card-body">
+                              <h5 class="card-title">SAVING THROWS</h5>
                               <form>
                                    <ul class="list-group list-group-flush">
                                         <li class="list-group-item">
@@ -81,8 +107,8 @@
                          </div>
                     </div>
                     <div class="card bg-light">
-                         <div class="card-header">SKILLS</div>
                          <div class="card-body">
+                              <h5 class="card-title">SKILLS</h5>
                               <form>
                                    <ul class="list-group list-group-flush">
                                         <li class="list-group-item">
@@ -96,7 +122,8 @@
                                         <li class="list-group-item">
                                              <div class="row">
                                                   <div class="col">
-                                                       <label for="animalhandling" class="skills-label">Animal Handling (Wis)</label>
+                                                       <label for="animalhandling" class="skills-label">Animal Handling (Wis)
+                                                       </label>
                                                        <input type="text" class="form-control skills" name="animalhandling" placeholder="0">
                                                   </div>
                                              </div>
@@ -208,7 +235,8 @@
                                         <li class="list-group-item">
                                              <div class="row">
                                                   <div class="col">
-                                                       <label for="acrobatics" class="skills-label">Sleight of Hand (Dex)</label>
+                                                       <label for="acrobatics" class="skills-label">Sleight of Hand (Dex)
+                                                       </label>
                                                        <input type="text" class="form-control skills" name="sleightofhand" placeholder="0">
                                                   </div>
                                              </div>
@@ -240,9 +268,7 @@
                               <div class="card-group">
                                    <div class="card">
                                         <div class="card-body">
-                                             <h5 class="card-title">Armor</h5>
-                                             <p class="card-text"></p>
-                                             <p class="card-text"></p>
+                                             <h5 class="card-title">ARMOR</h5>
                                              <div class="col">
                                                   <label for="armor" class="armor-label"></label>
                                                   <input type="text" class="form-control armor" name="armor" placeholder="0">
@@ -255,9 +281,7 @@
                          <div class="col-sm-4">
                               <div class="card">
                                    <div class="card-body">
-                                        <h5 class="card-title">Initiative</h5>
-                                        <p class="card-text"></p>
-                                        <p class="card-text"></p>
+                                        <h5 class="card-title">INITIATIVE</h5>
                                         <div class="col">
                                              <label for="iniative" class="iniative-label"></label>
                                              <input type="text" class="form-control armor" name="iniative" placeholder="0">
@@ -268,9 +292,7 @@
                          <div class="col-sm-4">
                               <div class="card">
                                    <div class="card-body">
-                                        <h5 class="card-title">Speed</h5>
-                                        <p class="card-text"></p>
-                                        <p class="card-text"></small></p>
+                                        <h5 class="card-title">SPEED</h5>
                                         <div class="col">
                                              <label for="speed" class="speed-label"></label>
                                              <input type="text" class="form-control armor" name="speed" placeholder="0">
@@ -298,34 +320,232 @@
                          <div class="col-sm-6">
                               <div class="form-group">
                                    <label for="exampleFormControlTextarea1">Death Saves</label>
-                                   <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                   <div>
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1">-</label>
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1">-</label>
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1">Successes</label>
+                                   </div>
+                              </div>
+                              <div>
+                                   <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                   <label class="form-check-label" for="inlineRadio1">-</label>
+                                   <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                   <label class="form-check-label" for="inlineRadio1">-</label>
+                                   <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                   <label class="form-check-label" for="inlineRadio1">Failures</label>
                               </div>
                          </div>
 
                     </div>
                     <div class="card bg-light">
-                         <div class="card-header">SKILLS</div>
                          <div class="card-body">
+                              <h5 class="card-title">ATTACKS AND SPELLCASTING</h5>
                               <form>
-
+                                   <div class="col-sm-4">
+                                        <div class="card">
+                                             <div class="card-body">
+                                                  <h5 class="card-title">NAME</h5>
+                                                  <div class="col">
+                                                       <label for="iniative" class="iniative-label"></label>
+                                                       <input type="text" class="form-control armor" name="iniative" placeholder="Sword">
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="col-sm-4">
+                                        <div class="card">
+                                             <div class="card-body">
+                                                  <h5 class="card-title">ATK BONUS</h5>
+                                                  <div class="col">
+                                                       <label for="iniative" class="iniative-label"></label>
+                                                       <input type="text" class="form-control armor" name="iniative" placeholder="+4">
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="col-sm-4">
+                                        <div class="card">
+                                             <div class="card-body">
+                                                  <h5 class="card-title">DMG/TYPE</h5>
+                                                  <div class="col">
+                                                       <label for="iniative" class="iniative-label"></label>
+                                                       <input type="text" class="form-control armor" name="iniative" placeholder="2d6 + 2S">
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="col-sm-4">
+                                        <div class="card">
+                                             <div class="card-body">
+                                                  <div class="col">
+                                                       <label for="iniative" class="iniative-label"></label>
+                                                       <input type="text" class="form-control armor" name="iniative" placeholder="Bow">
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="col-sm-4">
+                                        <div class="card">
+                                             <div class="card-body">
+                                                  <div class="col">
+                                                       <label for="iniative" class="iniative-label"></label>
+                                                       <input type="text" class="form-control armor" name="iniative" placeholder="+7">
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="col-sm-4">
+                                        <div class="card">
+                                             <div class="card-body">
+                                                  <div class="col">
+                                                       <label for="iniative" class="iniative-label"></label>
+                                                       <input type="text" class="form-control armor" name="iniative" placeholder="1d8 + 3P">
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="col-sm-4">
+                                        <div class="card">
+                                             <div class="card-body">
+                                                  <div class="col">
+                                                       <label for="attack" class="attack-label"></label>
+                                                       <input type="text" class="form-control attack" name="iniative" placeholder="">
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="col-sm-4">
+                                        <div class="card">
+                                             <div class="card-body">
+                                                  <div class="col">
+                                                       <label for="attack" class="attack-label"></label>
+                                                       <input type="text" class="form-control attack" name="attack" placeholder="">
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="col-sm-4">
+                                        <div class="card">
+                                             <div class="card-body">
+                                                  <div class="col">
+                                                       <label for="attack" class="iniative-attack"></label>
+                                                       <input type="text" class="form-control attack" name="attack" placeholder="">
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="form-group">
+                                        <label for="exampleFormControlTextarea1"></label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" placeholder=""></textarea>
+                                   </div>
+                              </form>
+                         </div>
+                    </div>
+                    <br>
+                    <div class="card bg-light">
+                         <div class="card-body">
+                              <h5 class="card-title">EQUIPMENT</h5>
+                              <form>
+                                   <div class="col-sm-4">
+                                        <div class="card">
+                                             <div class="card-body">
+                                                  <h5 class="card-title">CP</h5>
+                                                  <div class="col">
+                                                       <label for="cp" class="cp-label"></label>
+                                                       <input type="text" class="form-control cp" name="cp" placeholder="">
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="col-sm-4">
+                                        <div class="card">
+                                             <div class="card-body">
+                                                  <h5 class="card-title">SP</h5>
+                                                  <div class="col">
+                                                       <label for="sp" class="sp-label"></label>
+                                                       <input type="text" class="form-control sp" name="sp" placeholder="">
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="col-sm-4">
+                                        <div class="card">
+                                             <div class="card-body">
+                                                  <h5 class="card-title">EP</h5>
+                                                  <div class="col">
+                                                       <label for="ep" class="ep-label"></label>
+                                                       <input type="text" class="form-control ep" name="ep" placeholder="">
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="col-sm-6">
+                                        <div class="card">
+                                             <div class="card-body">
+                                                  <h5 class="card-title">GP</h5>
+                                                  <div class="col">
+                                                       <label for="gp" class="gp-label"></label>
+                                                       <input type="text" class="form-control gp" name="gp" placeholder="">
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="col-sm-6">
+                                        <div class="card">
+                                             <div class="card-body">
+                                                  <h5 class="card-title">PP</h5>
+                                                  <div class="col">
+                                                       <label for="pp" class="pp-label"></label>
+                                                       <input type="text" class="form-control pp" name="pp" placeholder="">
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="form-group">
+                                        <label for="exampleFormControlTextarea1"></label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" placeholder=""></textarea>
+                                   </div>
                               </form>
                          </div>
                     </div>
                </div>
                <div class="col-xs-12 col-sm-4">
                     <div class="card bg-light">
-                         <div class="card-header">SAVING THROWS</div>
                          <div class="card-body">
+                              <h5 class="card-title">CHARACTER PERSONALITY</h5>
                               <form>
-
+                                   <div class="form-group">
+                                        <label for="exampleFormControlTextarea1">Personality Traits</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="When I put my mind to something..."></textarea>
+                                   </div>
+                                   <div class="form-group">
+                                        <label for="exampleFormControlTextarea1">Ideals</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Sincerity. It's no good pretending to be something I'm not."></textarea>
+                                   </div>
+                                   <div class="form-group">
+                                        <label for="exampleFormControlTextarea1">Bonds</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="One day, Thundertree will be a prosperous town once again..."></textarea>
+                                   </div>
+                                   <div class="form-group">
+                                        <label for="exampleFormControlTextarea1">Flaws</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="I'm convinced of the significance of my destiny, and blind to my shortcomings and the risk of failure."></textarea>
+                                   </div>
 
                               </form>
                          </div>
                     </div>
+                    <br/>
                     <div class="card bg-light">
-                         <div class="card-header">SKILLS</div>
                          <div class="card-body">
+                              <h5 class="card-title">FEATURES & TRAITS</h5>
                               <form>
+                                   <div class="form-group">
+                                        <label for="exampleFormControlTextarea1"></label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="41" placeholder=""></textarea>
+                                   </div>
 
                               </form>
                          </div>
