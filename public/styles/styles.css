@@ -1,5 +1,8 @@
 .list-group-item {
-  line-height: 2.5;
+  line-height: 1;
+}
+.container {
+  text-align: center;
 }
 
 html, body {
@@ -11,3 +14,19 @@ html, body {
   text-align: center;
 }
 
+label.skills-label {
+ display: inline-block;
+ width: 50%;
+ max-width: auto;
+ margin-left: 20px;   
+}
+
+input.form-control.skills {
+  display: inline-block;
+  width: 25%;
+}
+
+label.armor-label {
+  display: inline-block;
+  width: 25%;
+}
