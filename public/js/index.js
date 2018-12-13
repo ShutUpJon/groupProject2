@@ -1,8 +1,72 @@
 // Get references to page elements
-var $exampleText = $("#example-text");
-var $exampleDescription = $("#example-description");
-var $submitBtn = $("#submit");
-var $exampleList = $("#example-list");
+
+var $classAndLvl = $("#characterInfo1");
+var $race = $("#characterInfo4");
+var $background = $("#characterInfo2");
+var $alignment = $("#characterInfo5");
+var $playerName = $("#characterInfo3");
+var $XP = $("#characterInfo6");
+var $strength = $("#strength");
+var $dexterity = $("#dexterity");
+var $constitution = $("#constitution");
+var $intelligence = $("#intelligence");
+var $wisdom = $("#wisdom");
+var $charisma = $("#charisma");
+var $acrobatics = $("#acrobatics");
+var $animalHandling = $("#animalHandling");
+var $arcana = $("#arcana");
+var $athletics = $("#athletics");
+var $deception = $("#deception");
+var $history = $("#history");
+var $insight = $("#insight");
+var $intimidation = $("#intimidation");
+var $investigation = $("#investigation");
+var $medicine = $("#medicine");
+var $nature = $("#nature");
+var $perception = $("#perception");
+var $perform = $("#perform");
+var $persuasion = $("#persuasion");
+var $religion = $("#religion");
+var $sleightOfHand = $("#sleightofhand");
+var $stealth = $("#stealth");
+var $survival = $("#survival");
+var $passiveWisdom = $("#passivewisdom");
+var $proficiencies = $("#proficiencies");
+var $languages = $("#languages");
+var $armorClass = $("#armorclass");
+var $initiative = $("#initiative");
+var $speed = $("#speed");
+var $maxHP = $("#maxhp");
+var $currentHP = $("#currenthp");
+var $tempHP = $("#temphp");
+var $hitDice = $("#hitdice");
+var $successes = $("#successes");
+var $failures = $("#failures");
+var $weaponName1 = $("#weaponname1");
+var $weaponAtk1 = $("#weaponatk1");
+var $weaponDmg1 = $("#weapondmg1");
+var $weaponName2 = $("#weaponname2");
+var $weaponAtk2 = $("#weaponatk2");
+var $weaponDmg2 = $("#weapondmg2");
+var $weaponName3 = $("#weaponname3");
+var $weaponAtk3 = $("#weaponatk3");
+var $weaponDmg3 = $("#weapondmg3");
+var $copperPiece = $("#copperpiece");
+var $silverPiece = $("#silverpiece");
+var $electrumPiece = $("#electrumpiece");
+var $goldPiece = $("#goldpiece");
+var $platinumPiece = $("#platinumpiece");
+var $equipment = $("#equipment");
+var $personalityTraits = $("#personalitytraits");
+var $ideals = $("#ideals");
+var $bonds = $("#bonds");
+var $flaws = $("#flaws");
+var $feature1 = $("#feature1");
+var $feature2 = $("#feature2");
+var $trait1 = $("#trait1");
+var $trait2 = $("#trait2");
+
+
 
 // The API object contains methods for each kind of request we'll make
 var API = {
@@ -64,8 +128,8 @@ var refreshExamples = function() {
 var handleFormSubmit = function(event) {
   event.preventDefault();
 
-  var example = {
-    text: $exampleText.val().trim(),
+  var character = {
+    classAndLvl: $classAndLvl.val().trim(),
     description: $exampleDescription.val().trim()
   };
 

@@ -1,7 +1,7 @@
 module.exports = function(sequelize, DataTypes) {
   var characters = sequelize.define("characters", {
     
-    class: {
+    classAndLvl: {
       type: DataTypes.STRING
       },
     level: {
