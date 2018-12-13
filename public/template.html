@@ -5,6 +5,7 @@
      <!-- Latest compiled and minified CSS -->
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
      <!-- CSS -->
+     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
      <link rel="stylesheet" href="../public/styles/styles.css">
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -60,7 +61,7 @@
                                              <div class="row">
                                                   <div class="col">
                                                        <label for="strength" class="skills-label">Strength</label>
-                                                       <input type="text" class="form-control skills" name="strength" placeholder="0">
+                                                       <input type="text" class="form-control skills" name="strength" id="strength" placeholder="0">
                                                   </div>
                                              </div>
                                         </li>
@@ -68,7 +69,7 @@
                                              <div class="row">
                                                   <div class="col">
                                                        <label for="dexterity" class="skills-label">Dexterity</label>
-                                                       <input type="text" class="form-control skills" name="dexterity" placeholder="0">
+                                                       <input type="text" class="form-control skills" name="dexterity" id="dexterity" placeholder="0">
                                                   </div>
                                              </div>
                                         </li>
@@ -76,7 +77,7 @@
                                              <div class="row">
                                                   <div class="col">
                                                        <label for="constitution" class="skills-label">Constitution</label>
-                                                       <input type="text" class="form-control skills" name="constitution" placeholder="0">
+                                                       <input type="text" class="form-control skills" name="constitution" id="constitution" placeholder="0">
                                                   </div>
                                              </div>
                                         </li>
@@ -84,7 +85,7 @@
                                              <div class="row">
                                                   <div class="col">
                                                        <label for="intelligence" class="skills-label">Intelligence</label>
-                                                       <input type="text" class="form-control skills" name="intelligence" placeholder="0">
+                                                       <input type="text" class="form-control skills" name="intelligence" id="intelligence" placeholder="0">
                                                   </div>
                                              </div>
                                         </li>
@@ -92,7 +93,7 @@
                                              <div class="row">
                                                   <div class="col">
                                                        <label for="wisdom" class="skills-label">Wisdom</label>
-                                                       <input type="text" class="form-control skills" name="wisdom" placeholder="0">
+                                                       <input type="text" class="form-control skills" name="wisdom" id="wisdom" placeholder="0">
                                                   </div>
                                              </div>
                                         </li>
@@ -100,7 +101,7 @@
                                              <div class="row">
                                                   <div class="col">
                                                        <label for="charisma" class="skills-label">Charisma</label>
-                                                       <input type="text" class="form-control skills" name="charisma" placeholder="0">
+                                                       <input type="text" class="form-control skills" name="charisma" id="charisma" placeholder="0">
                                                   </div>
                                              </div>
                                         </li>
@@ -118,7 +119,7 @@
                                              <div class="row">
                                                   <div class="col">
                                                        <label for="acrobatics" class="skills-label">Acrobatics (Dex)</label>
-                                                       <input type="text" class="form-control skills" name="acrobatics" placeholder="0">
+                                                       <input type="text" class="form-control skills" name="acrobatics" id="acrobatics" placeholder="0">
                                                   </div>
                                              </div>
                                         </li>
@@ -127,7 +128,7 @@
                                                   <div class="col">
                                                        <label for="animalhandling" class="skills-label">Animal Handling (Wis)
                                                        </label>
-                                                       <input type="text" class="form-control skills" name="animalhandling" placeholder="0">
+                                                       <input type="text" class="form-control skills" name="animalhandling" id="animalhandling" placeholder="0">
                                                   </div>
                                              </div>
                                         </li>
@@ -135,7 +136,7 @@
                                              <div class="row">
                                                   <div class="col">
                                                        <label for="arcana" class="skills-label">Arcana (Int)</label>
-                                                       <input type="text" class="form-control skills" name="arcana" placeholder="0">
+                                                       <input type="text" class="form-control skills" name="arcana" id="arcana" placeholder="0">
                                                   </div>
                                              </div>
                                         </li>
@@ -143,7 +144,7 @@
                                              <div class="row">
                                                   <div class="col">
                                                        <label for="athletics" class="skills-label">Athletics (Str)</label>
-                                                       <input type="text" class="form-control skills" name="athletics" placeholder="0">
+                                                       <input type="text" class="form-control skills" name="athletics" id="athletics" placeholder="0">
                                                   </div>
                                              </div>
                                         </li>
@@ -151,7 +152,7 @@
                                              <div class="row">
                                                   <div class="col">
                                                        <label for="deception" class="skills-label">Deception (Cha)</label>
-                                                       <input type="text" class="form-control skills" name="deception" placeholder="0">
+                                                       <input type="text" class="form-control skills" name="deception" id="deception" placeholder="0">
                                                   </div>
                                              </div>
                                         </li>
@@ -159,7 +160,7 @@
                                              <div class="row">
                                                   <div class="col">
                                                        <label for="acrobatics" class="skills-label">History (Int)</label>
-                                                       <input type="text" class="form-control skills" name="deception" placeholder="0">
+                                                       <input type="text" class="form-control skills" name="history" id="history" placeholder="0">
                                                   </div>
                                              </div>
                                         </li>
@@ -167,7 +168,7 @@
                                              <div class="row">
                                                   <div class="col">
                                                        <label for="acrobatics" class="skills-label">Insight (Wis)</label>
-                                                       <input type="text" class="form-control skills" name="insight" placeholder="0">
+                                                       <input type="text" class="form-control skills" name="insight" id="insight" placeholder="0">
                                                   </div>
                                              </div>
                                         </li>
@@ -175,7 +176,7 @@
                                              <div class="row">
                                                   <div class="col">
                                                        <label for="acrobatics" class="skills-label">Intimidation (Cha)</label>
-                                                       <input type="text" class="form-control skills" name="intimidation" placeholder="0">
+                                                       <input type="text" class="form-control skills" name="intimidation" id="intimidation" placeholder="0">
                                                   </div>
                                              </div>
                                         </li>
@@ -183,7 +184,7 @@
                                              <div class="row">
                                                   <div class="col">
                                                        <label for="acrobatics" class="skills-label">Investigation (Int)</label>
-                                                       <input type="text" class="form-control skills" name="investigation" placeholder="0">
+                                                       <input type="text" class="form-control skills" name="investigation" id="investigation" placeholder="0">
                                                   </div>
                                              </div>
                                         </li>
@@ -191,7 +192,7 @@
                                              <div class="row">
                                                   <div class="col">
                                                        <label for="acrobatics" class="skills-label">Medicine (Wis)</label>
-                                                       <input type="text" class="form-control skills" name="medicine" placeholder="0">
+                                                       <input type="text" class="form-control skills" name="medicine" id="medicine" placeholder="0">
                                                   </div>
                                              </div>
                                         </li>
@@ -199,7 +200,7 @@
                                              <div class="row">
                                                   <div class="col">
                                                        <label for="acrobatics" class="skills-label">Nature (Int)</label>
-                                                       <input type="text" class="form-control skills" name="nature" placeholder="0">
+                                                       <input type="text" class="form-control skills" name="nature" id="nature" placeholder="0">
                                                   </div>
                                              </div>
                                         </li>
@@ -207,7 +208,7 @@
                                              <div class="row">
                                                   <div class="col">
                                                        <label for="acrobatics" class="skills-label">Perception (Wis)</label>
-                                                       <input type="text" class="form-control skills" name="perception" placeholder="0">
+                                                       <input type="text" class="form-control skills" name="perception" id="perception" placeholder="0">
                                                   </div>
                                              </div>
                                         </li>
@@ -215,7 +216,7 @@
                                              <div class="row">
                                                   <div class="col">
                                                        <label for="acrobatics" class="skills-label">Performance (Cha)</label>
-                                                       <input type="text" class="form-control skills" name="performance" placeholder="0">
+                                                       <input type="text" class="form-control skills" name="performance" id="performance" placeholder="0">
                                                   </div>
                                              </div>
                                         </li>
@@ -223,7 +224,7 @@
                                              <div class="row">
                                                   <div class="col">
                                                        <label for="acrobatics" class="skills-label">Persuasion (Cha)</label>
-                                                       <input type="text" class="form-control skills" name="persuasion" placeholder="0">
+                                                       <input type="text" class="form-control skills" name="persuasion" id="persuasion" placeholder="0">
                                                   </div>
                                              </div>
                                         </li>
@@ -231,7 +232,7 @@
                                              <div class="row">
                                                   <div class="col">
                                                        <label for="acrobatics" class="skills-label">Religion (Int)</label>
-                                                       <input type="text" class="form-control skills" name="religion" placeholder="0">
+                                                       <input type="text" class="form-control skills" name="religion" id="religion" placeholder="0">
                                                   </div>
                                              </div>
                                         </li>
@@ -240,7 +241,7 @@
                                                   <div class="col">
                                                        <label for="acrobatics" class="skills-label">Sleight of Hand (Dex)
                                                        </label>
-                                                       <input type="text" class="form-control skills" name="sleightofhand" placeholder="0">
+                                                       <input type="text" class="form-control skills" name="sleightofhand" id="sleightofhand" placeholder="0">
                                                   </div>
                                              </div>
                                         </li>
@@ -248,7 +249,7 @@
                                              <div class="row">
                                                   <div class="col">
                                                        <label for="acrobatics" class="skills-label">Stealth (Dex)</label>
-                                                       <input type="text" class="form-control skills" name="stealth" placeholder="0">
+                                                       <input type="text" class="form-control skills" name="stealth" id="stealth" placeholder="0">
                                                   </div>
                                              </div>
                                         </li>
@@ -256,7 +257,7 @@
                                              <div class="row">
                                                   <div class="col">
                                                        <label for="acrobatics" class="skills-label">Survival (Wis)</label>
-                                                       <input type="text" class="form-control skills" name="stealth" placeholder="0">
+                                                       <input type="text" class="form-control skills" name="survival" id="survival" placeholder="0">
                                                   </div>
                                              </div>
                                         </li>
@@ -275,7 +276,7 @@
                                              <h5 class="card-title">ARMOR</h5>
                                              <div class="col">
                                                   <label for="armor" class="armor-label"></label>
-                                                  <input type="text" class="form-control armor" name="armor" placeholder="0">
+                                                  <input type="text" class="form-control armor" name="armor" id="armor" placeholder="0">
                                              </div>
 
                                         </div>
@@ -287,8 +288,8 @@
                                    <div class="card-body">
                                         <h5 class="card-title">INITIATIVE</h5>
                                         <div class="col">
-                                             <label for="iniative" class="iniative-label"></label>
-                                             <input type="text" class="form-control armor" name="iniative" placeholder="0">
+                                             <label for="initiative" class="initiative-label"></label>
+                                             <input type="text" class="form-control armor" name="initiative" id="initiative" placeholder="0">
                                         </div>
                                    </div>
                               </div>
@@ -299,7 +300,7 @@
                                         <h5 class="card-title">SPEED</h5>
                                         <div class="col">
                                              <label for="speed" class="speed-label"></label>
-                                             <input type="text" class="form-control armor" name="speed" placeholder="0">
+                                             <input type="text" class="form-control armor" name="speed" id="speed" placeholder="0">
                                         </div>
                                    </div>
                               </div>
@@ -353,8 +354,8 @@
                                              <div class="card-body">
                                                   <h5 class="card-title">NAME</h5>
                                                   <div class="col">
-                                                       <label for="iniative" class="iniative-label"></label>
-                                                       <input type="text" class="form-control armor" name="iniative" placeholder="Sword">
+                                                       <label for="initiative" class="initiative-label"></label>
+                                                       <input type="text" class="form-control armor" name="initiative" placeholder="Sword">
                                                   </div>
                                              </div>
                                         </div>
@@ -364,8 +365,8 @@
                                              <div class="card-body">
                                                   <h5 class="card-title">ATK BONUS</h5>
                                                   <div class="col">
-                                                       <label for="iniative" class="iniative-label"></label>
-                                                       <input type="text" class="form-control armor" name="iniative" placeholder="+4">
+                                                       <label for="initiative" class="initiative-label"></label>
+                                                       <input type="text" class="form-control armor" name="initiative" placeholder="+4">
                                                   </div>
                                              </div>
                                         </div>
@@ -375,8 +376,8 @@
                                              <div class="card-body">
                                                   <h5 class="card-title">DMG/TYPE</h5>
                                                   <div class="col">
-                                                       <label for="iniative" class="iniative-label"></label>
-                                                       <input type="text" class="form-control armor" name="iniative" placeholder="2d6 + 2S">
+                                                       <label for="initiative" class="initiative-label"></label>
+                                                       <input type="text" class="form-control armor" name="initiative" placeholder="2d6 + 2S">
                                                   </div>
                                              </div>
                                         </div>
@@ -385,8 +386,8 @@
                                         <div class="card">
                                              <div class="card-body">
                                                   <div class="col">
-                                                       <label for="iniative" class="iniative-label"></label>
-                                                       <input type="text" class="form-control armor" name="iniative" placeholder="Bow">
+                                                       <label for="initiative" class="initiative-label"></label>
+                                                       <input type="text" class="form-control armor" name="initiative" placeholder="Bow">
                                                   </div>
                                              </div>
                                         </div>
@@ -395,8 +396,8 @@
                                         <div class="card">
                                              <div class="card-body">
                                                   <div class="col">
-                                                       <label for="iniative" class="iniative-label"></label>
-                                                       <input type="text" class="form-control armor" name="iniative" placeholder="+7">
+                                                       <label for="initiative" class="initiative-label"></label>
+                                                       <input type="text" class="form-control armor" name="initiative" placeholder="+7">
                                                   </div>
                                              </div>
                                         </div>
@@ -405,8 +406,8 @@
                                         <div class="card">
                                              <div class="card-body">
                                                   <div class="col">
-                                                       <label for="iniative" class="iniative-label"></label>
-                                                       <input type="text" class="form-control armor" name="iniative" placeholder="1d8 + 3P">
+                                                       <label for="initiative" class="initiative-label"></label>
+                                                       <input type="text" class="form-control armor" name="initiative" placeholder="1d8 + 3P">
                                                   </div>
                                              </div>
                                         </div>
@@ -416,7 +417,7 @@
                                              <div class="card-body">
                                                   <div class="col">
                                                        <label for="attack" class="attack-label"></label>
-                                                       <input type="text" class="form-control attack" name="iniative" placeholder="">
+                                                       <input type="text" class="form-control attack" name="initiative" placeholder="">
                                                   </div>
                                              </div>
                                         </div>
@@ -435,7 +436,7 @@
                                         <div class="card">
                                              <div class="card-body">
                                                   <div class="col">
-                                                       <label for="attack" class="iniative-attack"></label>
+                                                       <label for="attack" class="initiative-attack"></label>
                                                        <input type="text" class="form-control attack" name="attack" placeholder="">
                                                   </div>
                                              </div>
@@ -591,5 +592,15 @@
           </div> <!-- Total Stats End -->
      </div>
 </body>
+
+<script>
+  function showValues() {
+    var str = $( "form" ).serialize();
+    $( "#results" ).text( str );
+  }
+  $( "input[type='checkbox'], input[type='radio']" ).on( "click", showValues );
+  $( "select" ).on( "change", showValues );
+  showValues();
+</script>
 
 </html>
