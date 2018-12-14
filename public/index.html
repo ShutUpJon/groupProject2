@@ -3,7 +3,9 @@
 
 <head>
      <!-- Latest compiled and minified CSS -->
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
      <!-- CSS -->
      <link rel="stylesheet" href="../public/styles/styles.css">
      <!-- J Query -->
@@ -16,10 +18,9 @@
 
 <body>
      <div class="container">
-          <!-- Navigation -->
-          <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+          <nav class="navbar navbar-expand-md navbar-light bg-light">
                <div class="container-fluid">
-                    <a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+                    <a class="navbar-brand" href="#"><img src="../public/img/logo.png"></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
                          <span class="navbar-toggler-icon"></span>
                     </button>
@@ -32,23 +33,42 @@
                                    <a class="nav-link" href="#">About</a>
                               </li>
                               <li class="nav-item">
-                                   <a class="nav-link" href="#">Services</a>
-                              </li>
-                              <li class="nav-item">
-                                   <a class="nav-link" href="#">Team</a>
-                              </li>
-                              <li class="nav-item">
-                                   <a class="nav-link" href="#">Connect</a>
+                                   <a class="nav-link" href="#">Characters</a>
                               </li>
                          </ul>
                     </div>
                </div>
           </nav> <!-- End Nav Bar Section -->
+          <!-- Image Sldier -->
+          <div id="slides" class="carousel slide" data-ride="carousel">
+               <ul class="carousel-indicators">
+                    <li data-target="#slides" data-slide-to="0"></li>
+                    <li data-target="#slides" data-slide-to="1"></li>
+                    <li data-target="#slides" data-slide-to="2"></li>
+               </ul>
+               <div class="carousel-inner">
+                    <div class="carousel-item active">
+                         <!--Background Images-->
+                         <img src="../public/img/carousel1.jpg">
+                         <div class="carousel-caption">
+                              <h1 class="display-2">Welcome</h1>
+                              <h3>DND Character Creator</h3>
+                              <button type="button" class="btn btn-outline-light btn-lg">Create Character</button>
+                              <button type="button" class="btn btn-primary btn-lg">Saved Characters</button>
+                         </div>
+                    </div>
+                    <div class="carousel-item">
+                         <!--Background Images-->
+                         <img src="../public/img/carousel2.jpg">
+                    </div>
+                    <div class="carousel-item">
+                         <!--Background Images-->
+                         <img src="../public/img/carousel3.jpg">
+                    </div>
+               </div>
+          </div> <!-- End Slider -->
+     </div> <!-- End of Container -->
 
-          <!-- End Nav Bar Section -->
-          <a class="btn btn-danger btn-lg" href="template.html" role="button">Create Character</a>
-          <a class="btn btn-primary btn-lg" href="#" role="button">Saved Characters</a>
-     </div>
 </body>
 
 </html>

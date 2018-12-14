@@ -3,7 +3,9 @@
 
 <head>
   <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <!-- CSS -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
@@ -19,9 +21,28 @@
 
 <body>
   <div class="container">
-    <div class="jumbotron">
-      DND CHARACTER SHEET
-    </div>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="../public/img/logo.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Characters</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav> <!-- End Nav Bar Section -->
+    <div class="jumbotron jumbotron-fluid"></div>
     <!-- Character Info Start -->
     <form>
       <div class="form-row">
@@ -52,9 +73,10 @@
           <input type="text" class="form-control" id="characterInfo6" placeholder="" required>
         </div>
       </div>
+      <hr>
     </form> <!-- Character Info End -->
     <!-- Saving Throw Start  -->
-    <div class="row-2">
+    <div class="row">
       <div class="col-xs-12 col-sm-4">
         <div class="card bg-light">
           <div class="card-body">
@@ -113,6 +135,7 @@
             </form>
           </div>
         </div> <!-- Saving Throw End  -->
+        <br>
         <!-- Skills Start -->
         <div class="card bg-light">
           <div class="card-body">
@@ -272,53 +295,42 @@
       </div> <!-- Skills End -->
       <!-- Hit Points Start -->
       <div class="col-xs-12 col-sm-4">
-        <div class="row-2">
+        <div class="row">
           <div class="col-sm-4">
-            <div class="card-group">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">ARMOR</h5>
-                  <div class="col">
-                    <label for="armor" class="armor-label"></label>
-                    <input type="text" class="form-control armor" name="armor" id="armor" placeholder="0">
-                  </div>
-
-                </div>
-              </div>
+            <h5 class="card-title">ARMOR</h5>
+            <div class="col">
+              <label for="armor" class="armor-label"></label>
+              <input type="text" class="form-control armor" name="armor" id="armor" placeholder="0">
             </div>
           </div>
           <div class="col-sm-4">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">INITIATIVE</h5>
-                <div class="col">
-                  <label for="initiative" class="initiative-label"></label>
-                  <input type="text" class="form-control armor" name="initiative" id="initiative" placeholder="0">
-                </div>
-              </div>
+            <h5 class="card-title">INITIATIVE</h5>
+            <div class="col">
+              <label for="initiative" class="initiative-label"></label>
+              <input type="text" class="form-control armor" name="initiative" id="initiative" placeholder="0">
             </div>
           </div>
           <div class="col-sm-4">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">SPEED</h5>
-                <div class="col">
-                  <label for="speed" class="speed-label"></label>
-                  <input type="text" class="form-control armor" name="speed" id="speed" placeholder="0">
-                </div>
-              </div>
+            <h5 class="card-title">SPEED</h5>
+            <div class="col">
+              <label for="speed" class="speed-label"></label>
+              <input type="text" class="form-control armor" name="speed" id="speed" placeholder="0">
             </div>
             <br>
           </div>
-          <form>
-            <div class="form-group">
-              <label for="exampleFormControlTextarea1">Current Hit Points</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Hit Point Maximum:"></textarea>
-            </div>
+          <div class="col-sm-6">
+            <form>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Current Hit Points</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Hit Point Maximum:"></textarea>
+              </div>
+          </div>
+          <div class="col-sm-6">
             <div class="form-group">
               <label for="exampleFormControlTextarea1">Temporary Hit Points</label>
               <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
+          </div>
           </form>
           <div class="col-sm-6">
             <div class="form-group">
@@ -346,183 +358,99 @@
               <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
               <label class="form-check-label" for="inlineRadio1">Failures</label>
             </div>
-            <br>
-            <br>
           </div>
         </div> <!-- Hit Points End -->
+        <br>
+        <hr>
         <!-- ATK & Spellcasting Start -->
         <h5 class="card-title">ATTACKS & SPELLCASTING</h5>
-        <div class="card bg-light">
-          <div class="card-body">
-            <form>
-              <div class="col-sm-4">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">NAME</h5>
-                    <div class="col">
-                      <label for="initiative" class="initiative-label"></label>
-                      <input type="text" class="form-control armor" name="initiative" placeholder="Sword">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">ATK BONUS</h5>
-                    <div class="col">
-                      <label for="initiative" class="initiative-label"></label>
-                      <input type="text" class="form-control armor" name="initiative" placeholder="+4">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">DMG/TYPE</h5>
-                    <div class="col">
-                      <label for="initiative" class="initiative-label"></label>
-                      <input type="text" class="form-control armor" name="initiative" placeholder="2d6 + 2S">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="col">
-                      <label for="initiative" class="initiative-label"></label>
-                      <input type="text" class="form-control armor" name="initiative" placeholder="Bow">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="col">
-                      <label for="initiative" class="initiative-label"></label>
-                      <input type="text" class="form-control armor" name="initiative" placeholder="+7">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="col">
-                      <label for="initiative" class="initiative-label"></label>
-                      <input type="text" class="form-control armor" name="initiative" placeholder="1d8 + 3P">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="col">
-                      <label for="attack" class="attack-label"></label>
-                      <input type="text" class="form-control attack" name="initiative" placeholder="">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="col">
-                      <label for="attack" class="attack-label"></label>
-                      <input type="text" class="form-control attack" name="attack" placeholder="">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="col">
-                      <label for="attack" class="initiative-attack"></label>
-                      <input type="text" class="form-control attack" name="attack" placeholder="">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="exampleFormControlTextarea1"></label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" placeholder=""></textarea>
-              </div>
-            </form>
-            <br>
+        <div class="row">
+          <div class="col-sm-4">
+            <h5 class="card-title">NAME</h5>
+            <label for="initiative" class="initiative-label"></label>
+            <input type="text" class="form-control armor" name="initiative" placeholder="Sword">
           </div>
-        </div> <!-- ATK & Spellcasting End -->
+          <div class="col-sm-4">
+            <h5 class="card-title">ATTACK</h5>
+            <label for="initiative" class="initiative-label"></label>
+            <input type="text" class="form-control armor" name="initiative" placeholder="+4">
+          </div>
+          <div class="col-sm-4">
+            <h5 class="card-title">DMG/TYPE</h5>
+            <label for="initiative" class="initiative-label"></label>
+            <input type="text" class="form-control armor" name="initiative" placeholder="2d6 + 2S">
+          </div>
+          <div class="col-sm-4">
+            <label for="initiative" class="initiative-label"></label>
+            <input type="text" class="form-control armor" name="initiative" placeholder="Bow">
+          </div>
+          <div class="col-sm-4">
+            <label for="initiative" class="initiative-label"></label>
+            <input type="text" class="form-control armor" name="initiative" placeholder="+7">
+          </div>
+          <div class="col-sm-4">
+            <label for="initiative" class="initiative-label"></label>
+            <input type="text" class="form-control armor" name="initiative" placeholder="1d8 + 3P">
+          </div>
+          <div class="col-sm-4">
+            <label for="attack" class="attack-label"></label>
+            <input type="text" class="form-control attack" name="initiative" placeholder="">
+          </div>
+          <div class="col-sm-4">
+            <label for="attack" class="attack-label"></label>
+            <input type="text" class="form-control attack" name="attack" placeholder="">
+          </div>
+          <div class="col-sm-4">
+            <label for="attack" class="initiative-attack"></label>
+            <input type="text" class="form-control attack" name="attack" placeholder="">
+          </div>
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1"></label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" placeholder=""></textarea>
+            </div>
+          </div>
+        </div><!-- ATK & Spellcasting End -->
+        <br>
+        <hr>
         <!-- Equipment Start -->
-        <div class="card bg-light">
-          <div class="card-body">
-            <h5 class="card-title">EQUIPMENT</h5>
-            <form>
-              <div class="col-sm-4">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">CP</h5>
-                    <div class="col">
-                      <label for="cp" class="cp-label"></label>
-                      <input type="text" class="form-control cp" name="cp" placeholder="">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">SP</h5>
-                    <div class="col">
-                      <label for="sp" class="sp-label"></label>
-                      <input type="text" class="form-control sp" name="sp" placeholder="">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">EP</h5>
-                    <div class="col">
-                      <label for="ep" class="ep-label"></label>
-                      <input type="text" class="form-control ep" name="ep" placeholder="">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">GP</h5>
-                    <div class="col">
-                      <label for="gp" class="gp-label"></label>
-                      <input type="text" class="form-control gp" name="gp" placeholder="">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">PP</h5>
-                    <div class="col">
-                      <label for="pp" class="pp-label"></label>
-                      <input type="text" class="form-control pp" name="pp" placeholder="">
-                    </div>
-                  </div>
-                </div>
-              </div>
+        <h5 class="card-title">EQUIPMENT</h5>
+        <form>
+          <div class="row">
+            <div class="col-sm-4">
+              <h5 class="card-title">CP</h5>
+              <label for="cp" class="cp-label"></label>
+              <input type="text" class="form-control cp" name="cp" placeholder="">
+            </div>
+            <div class="col-sm-4">
+              <h5 class="card-title">SP</h5>
+              <label for="sp" class="sp-label"></label>
+              <input type="text" class="form-control sp" name="sp" placeholder="">
+            </div>
+            <div class="col-sm-4">
+              <h5 class="card-title">EP</h5>
+              <label for="ep" class="ep-label"></label>
+              <input type="text" class="form-control ep" name="ep" placeholder="">
+            </div>
+            <div class="col-sm-6">
+              <h5 class="card-title">GP</h5>
+              <label for="gp" class="gp-label"></label>
+              <input type="text" class="form-control gp" name="gp" placeholder="">
+            </div>
+            <div class="col-sm-6">
+              <h5 class="card-title">PP</h5>
+              <label for="pp" class="pp-label"></label>
+              <input type="text" class="form-control pp" name="pp" placeholder="">
+            </div>
+            <hr>
+            <div class="col-sm-12">
               <div class="form-group">
                 <label for="exampleFormControlTextarea1"></label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="9" placeholder=""></textarea>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="14" placeholder=""></textarea>
               </div>
-            </form>
+            </div>
           </div>
-        </div>
+        </form>
       </div> <!-- Equipment End  -->
       <!-- Character Personality Start -->
       <div class="col-xs-12 col-sm-4">
@@ -546,7 +474,6 @@
                 <label for="exampleFormControlTextarea1">Flaws</label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="I'm convinced of the significance of my destiny, and blind to my shortcomings and the risk of failure."></textarea>
               </div>
-
             </form>
           </div>
         </div> <!-- Character Personality End -->
@@ -558,46 +485,48 @@
             <form>
               <div class="form-group">
                 <label for="exampleFormControlTextarea1"></label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="41" placeholder=""></textarea>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="39" placeholder=""></textarea>
               </div>
             </form>
-            <br>
           </div>
         </div> <!-- Features & Traits End -->
       </div>
-    </div>
-    <!-- Total Stats Start -->
-    <h5 class="card-title">TOTAL STATS</h5>
-    <div class="jumbotron">
-      <div class="row">
-        <div class="col-sm-2">
-          <input type="text" class="form-control totalStats" name="strength" placeholder="0">
-          <label for="str" class="totalStats">Strength</label>
-        </div>
-        <div class="col-sm-2">
-          <input type="text" class="form-control totalStats" name="dexterity" placeholder="0">
-          <label for="dex" class="totalStats">Dexterity</label>
-        </div>
-        <div class="col-sm-2">
-          <input type="text" class="form-control totalStats" name="constitution" placeholder="0">
-          <label for="con" class="totalStats">Constitution </label>
-        </div>
-        <div class="col-sm-2">
-          <input type="text" class="form-control totalStats" name="intelligence" placeholder="0">
-          <label for="int" class="totalStats">Intelligence</label>
-        </div>
-        <div class="col-sm-2">
-          <input type="text" class="form-control totalStats" name="wisdom" placeholder="0">
-          <label for="wis" class="totalStats">Wisdom</label>
-        </div>
-        <div class="col-sm-2">
-          <input type="text" class="form-control totalStats" name="charisma" placeholder="0">
-          <label for="cha" class="totalStats">Charisma</label>
+      <br>
+      <hr>
+      <!-- Total Stats Start -->
+      <div class="jumbotron">
+        <h5 class="card-title">TOTAL STATS</h5>
+        <div class="row">
+          <div class="col-sm-2">
+            <input type="text" class="form-control totalStats" name="strength" placeholder="0">
+            <label for="str" class="totalStats">Strength</label>
+          </div>
+          <div class="col-sm-2">
+            <input type="text" class="form-control totalStats" name="dexterity" placeholder="0">
+            <label for="dex" class="totalStats">Dexterity</label>
+          </div>
+          <div class="col-sm-2">
+            <input type="text" class="form-control totalStats" name="constitution" placeholder="0">
+            <label for="con" class="totalStats">Constitution </label>
+          </div>
+          <div class="col-sm-2">
+            <input type="text" class="form-control totalStats" name="intelligence" placeholder="0">
+            <label for="int" class="totalStats">Intelligence</label>
+          </div>
+          <div class="col-sm-2">
+            <input type="text" class="form-control totalStats" name="wisdom" placeholder="0">
+            <label for="wis" class="totalStats">Wisdom</label>
+          </div>
+          <div class="col-sm-2">
+            <input type="text" class="form-control totalStats" name="charisma" placeholder="0">
+            <label for="cha" class="totalStats">Charisma</label>
+          </div>
         </div>
       </div>
     </div> <!-- Total Stats End -->
     <a class="btn btn-danger btn-lg" href="" role="button" id="submitBtn">Save Character</a>
   </div>
+
 </body>
 
 
