@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="../public/styles/styles.css">
   <!-- J Query -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -521,20 +522,14 @@
             <label for="cha" class="totalStats">Charisma</label>
           </div>
         </div>
-      </div> <!-- Total Stats End -->
-    </div>
-    <button type="button" class="btn btn-danger">Save Character</button>
-  </div> <!-- End of Container -->
+      </div>
+    </div> <!-- Total Stats End -->
+    <a class="btn btn-danger btn-lg" href="" role="button" id="submitBtn">Save Character</a>
+  </div>
+
+  <script src="js/index.js"></script>
+
 </body>
 
-<script>
-  function showValues() {
-    var str = $("form").serialize();
-    $("#results").text(str);
-  }
-  $("input[type='checkbox'], input[type='radio']").on("click", showValues);
-  $("select").on("change", showValues);
-  showValues();
-</script>
 
 </html>
