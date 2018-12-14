@@ -66,62 +66,64 @@ var $feature2 = $("#feature2");
 var $trait1 = $("#trait1");
 var $trait2 = $("#trait2");
 
+var $submitBtn = $("#submitBtn");
+
 
 
 // The API object contains methods for each kind of request we'll make
 var API = {
-  saveExample: function(example) {
+  saveCharacter: function(character) {
     return $.ajax({
       headers: {
         "Content-Type": "application/json"
       },
       type: "POST",
-      url: "api/examples",
-      data: JSON.stringify(example)
+      url: "api/characters",
+      data: JSON.stringify(character)
     });
   },
-  getExamples: function() {
+  getCharacters: function() {
     return $.ajax({
-      url: "api/examples",
+      url: "api/characters",
       type: "GET"
     });
   },
-  deleteExample: function(id) {
+  deleteCharacter: function(id) {
     return $.ajax({
-      url: "api/examples/" + id,
+      url: "api/characters/" + id,
       type: "DELETE"
     });
   }
 };
 
 // refreshExamples gets new examples from the db and repopulates the list
-var refreshExamples = function() {
-  API.getExamples().then(function(data) {
-    var $examples = data.map(function(example) {
-      var $a = $("<a>")
-        .text(example.text)
-        .attr("href", "/example/" + example.id);
+// var refreshExamples = function() {
+//   API.getExamples().then(function(data) {
+//     var $examples = data.map(function(example) {
+//       var $a = $("<a>")
+//         .text(example.text)
+//         .attr("href", "/example/" + example.id);
 
-      var $li = $("<li>")
-        .attr({
-          class: "list-group-item",
-          "data-id": example.id
-        })
-        .append($a);
+//       var $li = $("<li>")
+//         .attr({
+//           class: "list-group-item",
+//           "data-id": example.id
+//         })
+//         .append($a);
 
-      var $button = $("<button>")
-        .addClass("btn btn-danger float-right delete")
-        .text("ｘ");
+//       var $button = $("<button>")
+//         .addClass("btn btn-danger float-right delete")
+//         .text("ｘ");
 
-      $li.append($button);
+//       $li.append($button);
 
-      return $li;
-    });
+//       return $li;
+//     });
 
-    $exampleList.empty();
-    $exampleList.append($examples);
-  });
-};
+//     $exampleList.empty();
+//     $exampleList.append($examples);
+//   });
+// };
 
 // handleFormSubmit is called whenever we submit a new example
 // Save the new example to the db and refresh the list
@@ -130,20 +132,18 @@ var handleFormSubmit = function(event) {
 
   var character = {
     classAndLvl: $classAndLvl.val().trim(),
-    description: $exampleDescription.val().trim()
+    race: $race.val().trim(),
+    background: $background.val().trim(),
+
   };
 
-  if (!(example.text && example.description)) {
-    alert("You must enter an example text and description!");
-    return;
-  }
 
-  API.saveExample(example).then(function() {
-    refreshExamples();
+  API.saveCharacter(character).then(function() {
+    refreshCharacters();
   });
 
-  $exampleText.val("");
-  $exampleDescription.val("");
+  $classAndLvl.val("");
+  $race.val("");
 };
 
 // handleDeleteBtnClick is called when an example's delete button is clicked
@@ -160,4 +160,4 @@ var handleDeleteBtnClick = function() {
 
 // Add event listeners to the submit and delete buttons
 $submitBtn.on("click", handleFormSubmit);
-$exampleList.on("click", ".delete", handleDeleteBtnClick);
+// $exampleList.on("click", ".delete", handleDeleteBtnClick);
