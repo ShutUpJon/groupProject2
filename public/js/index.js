@@ -134,6 +134,8 @@ var handleFormSubmit = function(event) {
     classAndLvl: $classAndLvl.val().trim(),
     race: $race.val().trim(),
     background: $background.val().trim(),
+    alignment: $alignment.val().trim(),
+    playerName: $playerName.val().trim()
 
   };
 
