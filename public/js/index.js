@@ -66,62 +66,64 @@ var $feature2 = $("#feature2");
 var $trait1 = $("#trait1");
 var $trait2 = $("#trait2");
 
+var $submitBtn = $("#submitBtn");
+
 
 
 // The API object contains methods for each kind of request we'll make
 var API = {
-  saveExample: function(example) {
+  saveCharacter: function(character) {
     return $.ajax({
       headers: {
         "Content-Type": "application/json"
       },
       type: "POST",
-      url: "api/examples",
-      data: JSON.stringify(example)
+      url: "api/characters",
+      data: JSON.stringify(character)
     });
   },
-  getExamples: function() {
+  getCharacters: function() {
     return $.ajax({
-      url: "api/examples",
+      url: "api/characters",
       type: "GET"
     });
   },
-  deleteExample: function(id) {
+  deleteCharacter: function(id) {
     return $.ajax({
-      url: "api/examples/" + id,
+      url: "api/characters/" + id,
       type: "DELETE"
     });
   }
 };
 
 // refreshExamples gets new examples from the db and repopulates the list
-var refreshExamples = function() {
-  API.getExamples().then(function(data) {
-    var $examples = data.map(function(example) {
-      var $a = $("<a>")
-        .text(example.text)
-        .attr("href", "/example/" + example.id);
+// var refreshExamples = function() {
+//   API.getExamples().then(function(data) {
+//     var $examples = data.map(function(example) {
+//       var $a = $("<a>")
+//         .text(example.text)
+//         .attr("href", "/example/" + example.id);
 
-      var $li = $("<li>")
-        .attr({
-          class: "list-group-item",
-          "data-id": example.id
-        })
-        .append($a);
+//       var $li = $("<li>")
+//         .attr({
+//           class: "list-group-item",
+//           "data-id": example.id
+//         })
+//         .append($a);
 
-      var $button = $("<button>")
-        .addClass("btn btn-danger float-right delete")
-        .text("ｘ");
+//       var $button = $("<button>")
+//         .addClass("btn btn-danger float-right delete")
+//         .text("ｘ");
 
-      $li.append($button);
+//       $li.append($button);
 
-      return $li;
-    });
+//       return $li;
+//     });
 
-    $exampleList.empty();
-    $exampleList.append($examples);
-  });
-};
+//     $exampleList.empty();
+//     $exampleList.append($examples);
+//   });
+// };
 
 // handleFormSubmit is called whenever we submit a new example
 // Save the new example to the db and refresh the list
@@ -130,20 +132,82 @@ var handleFormSubmit = function(event) {
 
   var character = {
     classAndLvl: $classAndLvl.val().trim(),
-    description: $exampleDescription.val().trim()
+    race: $race.val().trim(),
+    background: $background.val().trim(),
+    alignment: $alignment.val().trim(),
+    playerName: $playerName.val().trim(),
+    alignment: $alignment.val().trim(),
+    XP: $XP.val().trim(),
+    strength: $strength.val().trim(),
+    dexterity: $dexterity.val().trim(),
+    constitution: $constitution.val().trim(),
+    intelligence: $intelligence.val().trim(),
+    wisdom: $wisdom.val().trim(),
+    charisma: $charisma.val().trim(),
+    acrobatics: $acrobatics.val().trim(),
+    animalHandling: $animalHandling.val().trim(),
+    arcana: $arcana.val().trim(),
+    athletics: $athletics.val().trim(),
+    deception: $deception.val().trim(),
+    history: $history.val().trim(),
+    insight: $insight.val().trim(),
+    intimidation: $intimidation.val().trim(),
+    investigation: $investigation.val().trim(),
+    medicine: $medicine.val().trim(),
+    nature: $nature.val().trim(),
+    perception: $perception.val().trim(),
+    perform: $perform.val().trim(),
+    persuasion: $persuasion.val().trim(),
+    religion: $religion.val().trim(),
+    sleightOfHand: $sleightOfHand.val().trim(),
+    stealth: $stealth.val().trim(),
+    survival: $survival.val().trim(),
+    passiveWisdom: $passiveWisdom.val().trim(),
+    proficiencies: $proficiencies.val().trim(),
+    languages: $languages.val().trim(),
+    armorClass: $armorClass.val().trim(),
+    initiative: $initiative.val().trim(),
+    speed: $speed.val().trim(),
+    maxHP: $maxHP.val().trim(),
+    currentHP: $currentHP.val().trim(),
+    tempHP: $tempHP.val().trim(),
+    hitDice: $hitDice.val().trim(),
+    successes: $successes.val().trim(),
+    failures: $failures.val().trim(),
+    weaponName1: $weaponName1.val().trim(),
+    weaponAtk1: $weaponAtk1.val().trim(),
+    weaponDmg1: $weaponDmg1.val().trim(),
+    weaponName2: $weaponName1.val().trim(),
+    weaponAtk2: $weaponAtk1.val().trim(),
+    weaponDmg2: $weaponDmg1.val().trim(),
+    weaponName3: $weaponName1.val().trim(),
+    weaponAtk3: $weaponAtk1.val().trim(),
+    weaponDmg3: $weaponDmg1.val().trim(),
+    copperPiece: $copperPiece.val().trim(),
+    silverPiece: $silverPiece.val().trim(),
+    electrumPiece: $electrumPiece.val().trim(),
+    goldPiece: $goldPiece.val().trim(),
+    platinumPiece: $platinumPiece.val().trim(),
+    equipment: $equipment.val().trim(),
+    personalityTraits: $personalityTraits.val().trim(),
+    ideals: $ideals.val().trim(),
+    bonds: $bonds.val().trim(),
+    flaws: $flaws.val().trim(),
+    feature1: $feature1.val().trim(),
+    feature2: $feature2.val().trim(),
+    trait1: $trait1.val().trim(),
+    trait2: $trait2.val().trim()
+
+
   };
 
-  if (!(example.text && example.description)) {
-    alert("You must enter an example text and description!");
-    return;
-  }
 
-  API.saveExample(example).then(function() {
-    refreshExamples();
+  API.saveCharacter(character).then(function() {
+    refreshCharacters();
   });
 
-  $exampleText.val("");
-  $exampleDescription.val("");
+  $classAndLvl.val("");
+  $race.val("");
 };
 
 // handleDeleteBtnClick is called when an example's delete button is clicked
@@ -160,4 +224,4 @@ var handleDeleteBtnClick = function() {
 
 // Add event listeners to the submit and delete buttons
 $submitBtn.on("click", handleFormSubmit);
-$exampleList.on("click", ".delete", handleDeleteBtnClick);
+// $exampleList.on("click", ".delete", handleDeleteBtnClick);
