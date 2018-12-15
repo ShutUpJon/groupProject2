@@ -1,18 +1,13 @@
 .navbar {
   padding: .8rem;
 }
+
 .navbar-nav li {
   padding-right: 20px;
 }
+
 .nav-link {
   font-size: 1.1em !important
-}
-
-.list-group-item {
-  line-height: 1;
-}
-.container {
-  text-align: center;
 }
 
 html, body {
@@ -20,8 +15,31 @@ html, body {
   width: 100%;
 }
 
+.container {
+  text-align: center;
+}
+
+.list-group-item {
+  line-height: 1;
+}
+
+.wrapper-1{
+  background-color: #666;
+}
+
+.card1 {
+  color: #fff;
+}
+
+.row2 {
+  background-color: red;
+  color: #fff;
+  padding-top: 1.3rem;
+}
 .jumbotron {
   text-align: center;
+  background-color: black;
+  color: #fff;
 }
 
 label.skills-label {
