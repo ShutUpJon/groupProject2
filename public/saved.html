@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <!-- Latest compiled and minified CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+          crossorigin="anonymous">
+     <!-- CSS -->
+     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+          crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="../public/styles/styles.css">
+     <!-- J Query -->
+     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Character Template</title>
+</head>
+
+<body>
+     <div class="container">
+          <nav class="navbar navbar-expand-md navbar-light bg-light">
+               <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html"><img src="../public/img/logo.png"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                         <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                         <ul class="navbar-nav ml-auto">
+                              <li class="nav-item">
+                                   <a class="nav-link" href="#">Home</a>
+                              </li>
+                              <li class="nav-item">
+                                   <a class="nav-link" href="#">About</a>
+                              </li>
+                              <li class="nav-item">
+                                   <a class="nav-link" href="#">Characters</a>
+                              </li>
+                         </ul>
+                    </div>
+               </div>
+          </nav> <!-- End Nav Bar Section -->
+          <!-- Character Info Start -->
+          <div class="jumbotron">
+               <form>
+                    <div class="form-row">
+                         <div class="col-md-4">
+                              <label for="characterInfo1">CLASS & LEVEL</label>
+                              <input type="text" class="form-control" id="characterInfo1" placeholder="Fighter 1" value="" required>
+                         </div>
+                         <div class="col-md-4">
+                              <label for="characterInfo2">BACKGROUND</label>
+                              <input type="text" class="form-control" id="characterInfo2" placeholder="Folk Hero" value="" required>
+                         </div>
+                         <div class="col-md-4">
+                              <label for="characterInfo3">CHARACTER NAME</label>
+                              <input type="text" class="form-control" id="characterInfo3" placeholder="Sir Lawrence of Jon" value="" required>
+                         </div>
+                    </div>
+                    <div class="form-row">
+                         <div class="col-md-4">
+                              <label for="characterInfo4">RACE</label>
+                              <input type="text" class="form-control" id="characterInfo4" placeholder="Human" required>
+                         </div>
+                         <div class="col-md-4">
+                              <label for="characterInfo5">ALIGNMENT</label>
+                              <input type="text" class="form-control" id="characterInfo5" placeholder="Lawful Good" required>
+                         </div>
+                         <div class="col-md-4">
+                              <label for="characterInfo6">EXPERIENCE POINTS</label>
+                              <input type="text" class="form-control" id="characterInfo6" placeholder="" required>
+                         </div>
+                    </div>
+               </form>
+          </div> <!-- Character Info End -->
+          <!-- Saving Throw Start  -->
+          <div class="row">
+               <div class="col-xs-12 col-sm-4">
+                    <div class="card bg-light">
+                         <div class="wrapper-1">
+                              <div class="card-body">
+                                   <h5 class="card-title card1">SAVING THROWS</h5>
+                                   <form>
+                                        <ul class="list-group list-group-flush">
+                                             <li class="list-group-item">
+                                                  <div class="row">
+                                                       <div class="col">
+                                                            <label for="strength" class="skills-label">Strength</label>
+                                                            <input type="text" class="form-control skills" name="strength" id="strength" placeholder="4">
+                                                       </div>
+                                                  </div>
+                                             </li>
+                                             <li class="list-group-item">
+                                                  <div class="row">
+                                                       <div class="col">
+                                                            <label for="dexterity" class="skills-label">Dexterity</label>
+                                                            <input type="text" class="form-control skills" name="dexterity" id="dexterity" placeholder="3">
+                                                       </div>
+                                                  </div>
+                                             </li>
+                                             <li class="list-group-item">
+                                                  <div class="row">
+                                                       <div class="col">
+                                                            <label for="constitution" class="skills-label">Constitution</label>
+                                                            <input type="text" class="form-control skills" name="constitution" id="constitution" placeholder="4">
+                                                       </div>
+                                                  </div>
+                                             </li>
+                                             <li class="list-group-item">
+                                                  <div class="row">
+                                                       <div class="col">
+                                                            <label for="intelligence" class="skills-label">Intelligence</label>
+                                                            <input type="text" class="form-control skills" name="intelligence" id="intelligence" placeholder="0">
+                                                       </div>
+                                                  </div>
+                                             </li>
+                                             <li class="list-group-item">
+                                                  <div class="row">
+                                                       <div class="col">
+                                                            <label for="wisdom" class="skills-label">Wisdom</label>
+                                                            <input type="text" class="form-control skills" name="wisdom" id="wisdom" placeholder="1">
+                                                       </div>
+                                                  </div>
+                                             </li>
+                                             <li class="list-group-item">
+                                                  <div class="row">
+                                                       <div class="col">
+                                                            <label for="charisma" class="skills-label">Charisma</label>
+                                                            <input type="text" class="form-control skills" name="charisma" id="charisma" placeholder="1">
+                                                       </div>
+                                                  </div>
+                                             </li>
+                                        </ul>
+                                   </form>
+                              </div>
+                         </div>
+                    </div> <!-- Saving Throw End  -->
+                    <br>
+                    <!-- Skills Start -->
+                    <div class="card bg-light">
+                         <div class="wrapper-1">
+                              <div class="card-body">
+                                   <h5 class="card-title card1">SKILLS</h5>
+                                   <form>
+                                        <ul class="list-group list-group-flush">
+                                             <li class="list-group-item">
+                                                  <div class="row">
+                                                       <div class="col">
+                                                            <label for="acrobatics" class="skills-label">Acrobatics (Dex)</label>
+                                                            <input type="text" class="form-control skills" name="acrobatics" id="acrobatics" placeholder="3">
+                                                       </div>
+                                                  </div>
+                                             </li>
+                                             <li class="list-group-item">
+                                                  <div class="row">
+                                                       <div class="col">
+                                                            <label for="animalhandling" class="skills-label">Animal Handling
+                                                                 (Wis)
+                                                            </label>
+                                                            <input type="text" class="form-control skills" name="animalhandling" id="animalhandling" placeholder="3">
+                                                       </div>
+                                                  </div>
+                                             </li>
+                                             <li class="list-group-item">
+                                                  <div class="row">
+                                                       <div class="col">
+                                                            <label for="arcana" class="skills-label">Arcana (Int)</label>
+                                                            <input type="text" class="form-control skills" name="arcana" id="arcana" placeholder="0">
+                                                       </div>
+                                                  </div>
+                                             </li>
+                                             <li class="list-group-item">
+                                                  <div class="row">
+                                                       <div class="col">
+                                                            <label for="athletics" class="skills-label">Athletics (Str)</label>
+                                                            <input type="text" class="form-control skills" name="athletics" id="athletics" placeholder="2">
+                                                       </div>
+                                                  </div>
+                                             </li>
+                                             <li class="list-group-item">
+                                                  <div class="row">
+                                                       <div class="col">
+                                                            <label for="deception" class="skills-label">Deception (Cha)</label>
+                                                            <input type="text" class="form-control skills" name="deception" id="deception" placeholder="-1">
+                                                       </div>
+                                                  </div>
+                                             </li>
+                                             <li class="list-group-item">
+                                                  <div class="row">
+                                                       <div class="col">
+                                                            <label for="acrobatics" class="skills-label">History (Int)</label>
+                                                            <input type="text" class="form-control skills" name="history" id="history" placeholder="2">
+                                                       </div>
+                                                  </div>
+                                             </li>
+                                             <li class="list-group-item">
+                                                  <div class="row">
+                                                       <div class="col">
+                                                            <label for="acrobatics" class="skills-label">Insight (Wis)</label>
+                                                            <input type="text" class="form-control skills" name="insight" id="insight" placeholder="1">
+                                                       </div>
+                                                  </div>
+                                             </li>
+                                             <li class="list-group-item">
+                                                  <div class="row">
+                                                       <div class="col">
+                                                            <label for="acrobatics" class="skills-label">Intimidation (Cha)</label>
+                                                            <input type="text" class="form-control skills" name="intimidation" id="intimidation" placeholder="-1">
+                                                       </div>
+                                                  </div>
+                                             </li>
+                                             <li class="list-group-item">
+                                                  <div class="row">
+                                                       <div class="col">
+                                                            <label for="acrobatics" class="skills-label">Investigation (Int)</label>
+                                                            <input type="text" class="form-control skills" name="investigation" id="investigation" placeholder="0">
+                                                       </div>
+                                                  </div>
+                                             </li>
+                                             <li class="list-group-item">
+                                                  <div class="row">
+                                                       <div class="col">
+                                                            <label for="acrobatics" class="skills-label">Medicine (Wis)</label>
+                                                            <input type="text" class="form-control skills" name="medicine" id="medicine" placeholder="1">
+                                                       </div>
+                                                  </div>
+                                             </li>
+                                             <li class="list-group-item">
+                                                  <div class="row">
+                                                       <div class="col">
+                                                            <label for="acrobatics" class="skills-label">Nature (Int)</label>
+                                                            <input type="text" class="form-control skills" name="nature" id="nature" placeholder="0">
+                                                       </div>
+                                                  </div>
+                                             </li>
+                                             <li class="list-group-item">
+                                                  <div class="row">
+                                                       <div class="col">
+                                                            <label for="acrobatics" class="skills-label">Perception (Wis)</label>
+                                                            <input type="text" class="form-control skills" name="perception" id="perception" placeholder="3">
+                                                       </div>
+                                                  </div>
+                                             </li>
+                                             <li class="list-group-item">
+                                                  <div class="row">
+                                                       <div class="col">
+                                                            <label for="acrobatics" class="skills-label">Performance (Cha)</label>
+                                                            <input type="text" class="form-control skills" name="performance" id="performance" placeholder="-1">
+                                                       </div>
+                                                  </div>
+                                             </li>
+                                             <li class="list-group-item">
+                                                  <div class="row">
+                                                       <div class="col">
+                                                            <label for="acrobatics" class="skills-label">Persuasion (Cha)</label>
+                                                            <input type="text" class="form-control skills" name="persuasion" id="persuasion" placeholder="-1">
+                                                       </div>
+                                                  </div>
+                                             </li>
+                                             <li class="list-group-item">
+                                                  <div class="row">
+                                                       <div class="col">
+                                                            <label for="acrobatics" class="skills-label">Religion (Int)</label>
+                                                            <input type="text" class="form-control skills" name="religion" id="religion" placeholder="0">
+                                                       </div>
+                                                  </div>
+                                             </li>
+                                             <li class="list-group-item">
+                                                  <div class="row">
+                                                       <div class="col">
+                                                            <label for="acrobatics" class="skills-label">Sleight of Hand
+                                                                 (Dex)
+                                                            </label>
+                                                            <input type="text" class="form-control skills" name="sleightofhand" id="sleightofhand" placeholder="3">
+                                                       </div>
+                                                  </div>
+                                             </li>
+                                             <li class="list-group-item">
+                                                  <div class="row">
+                                                       <div class="col">
+                                                            <label for="acrobatics" class="skills-label">Stealth (Dex)</label>
+                                                            <input type="text" class="form-control skills" name="stealth" id="stealth" placeholder="3">
+                                                       </div>
+                                                  </div>
+                                             </li>
+                                             <li class="list-group-item">
+                                                  <div class="row">
+                                                       <div class="col">
+                                                            <label for="acrobatics" class="skills-label">Survival (Wis)</label>
+                                                            <input type="text" class="form-control skills" name="survival" id="survival" placeholder="3">
+                                                       </div>
+                                                  </div>
+                                             </li>
+                                        </ul>
+                                   </form>
+                              </div>
+                         </div>
+                    </div>
+               </div> <!-- Skills End -->
+               <!-- Hit Points Start -->
+               <div class="col-xs-12 col-sm-4 row2">
+                    <div class="row">
+                         <div class="col-sm-4">
+                              <h5 class="card-title">ARMOR</h5>
+                              <div class="col">
+                                   <label for="armor" class="armor-label"></label>
+                                   <input type="text" class="form-control armor" name="armor" id="armor" placeholder="14">
+                              </div>
+                         </div>
+                         <div class="col-sm-4">
+                              <h5 class="card-title">INITIATIVE</h5>
+                              <div class="col">
+                                   <label for="initiative" class="initiative-label"></label>
+                                   <input type="text" class="form-control armor" name="initiative" id="initiative" placeholder="3">
+                              </div>
+                         </div>
+                         <div class="col-sm-4">
+                              <h5 class="card-title">SPEED</h5>
+                              <div class="col">
+                                   <label for="speed" class="speed-label"></label>
+                                   <input type="text" class="form-control armor" name="speed" id="speed" placeholder="30 FT">
+                              </div>
+                              <br>
+                         </div>
+                         <div class="col-sm-6">
+                              <form>
+                                   <div class="form-group">
+                                        <label for="exampleFormControlTextarea1">Current Hit Points</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Hit Point Maximum: 12"></textarea>
+                                   </div>
+                         </div>
+                         <div class="col-sm-6">
+                              <div class="form-group">
+                                   <label for="exampleFormControlTextarea1">Temporary Hit Points</label>
+                                   <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                              </div>
+                         </div>
+                         </form>
+                         <div class="col-sm-6">
+                              <div class="form-group">
+                                   <label for="exampleFormControlTextarea1">Hit Dice</label>
+                                   <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Total: 1d10"></textarea>
+                              </div>
+                         </div>
+                         <div class="col-sm-6">
+                              <div class="form-group">
+                                   <label for="exampleFormControlTextarea1">Death Saves</label>
+                                   <div>
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1">-</label>
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1">-</label>
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1">Successes</label>
+                                   </div>
+                              </div>
+                              <div>
+                                   <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                   <label class="form-check-label" for="inlineRadio1">-</label>
+                                   <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                   <label class="form-check-label" for="inlineRadio1">-</label>
+                                   <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                   <label class="form-check-label" for="inlineRadio1">Failures</label>
+                              </div>
+                         </div>
+                    </div> <!-- Hit Points End -->
+
+                    <hr>
+                    <!-- ATK & Spellcasting Start -->
+                    <h5 class="card-title">ATTACKS & SPELLCASTING</h5>
+                    <div class="row">
+                         <div class="col-sm-4">
+                              <h5 class="card-title">NAME</h5>
+                              <label for="initiative" class="initiative-label"></label>
+                              <input type="text" class="form-control armor" name="initiative" placeholder="Sword">
+                         </div>
+                         <div class="col-sm-4">
+                              <h5 class="card-title">ATTACK</h5>
+                              <label for="initiative" class="initiative-label"></label>
+                              <input type="text" class="form-control armor" name="initiative" placeholder="+4">
+                         </div>
+                         <div class="col-sm-4">
+                              <h5 class="card-title">DMG/TYPE</h5>
+                              <label for="initiative" class="initiative-label"></label>
+                              <input type="text" class="form-control armor" name="initiative" placeholder="2d6 + 2S">
+                         </div>
+                         <div class="col-sm-4">
+                              <label for="initiative" class="initiative-label"></label>
+                              <input type="text" class="form-control armor" name="initiative" placeholder="Bow">
+                         </div>
+                         <div class="col-sm-4">
+                              <label for="initiative" class="initiative-label"></label>
+                              <input type="text" class="form-control armor" name="initiative" placeholder="+7">
+                         </div>
+                         <div class="col-sm-4">
+                              <label for="initiative" class="initiative-label"></label>
+                              <input type="text" class="form-control armor" name="initiative" placeholder="1d8 + 3P">
+                         </div>
+                         <div class="col-sm-4">
+                              <label for="attack" class="attack-label"></label>
+                              <input type="text" class="form-control attack" name="initiative" placeholder="">
+                         </div>
+                         <div class="col-sm-4">
+                              <label for="attack" class="attack-label"></label>
+                              <input type="text" class="form-control attack" name="attack" placeholder="">
+                         </div>
+                         <div class="col-sm-4">
+                              <label for="attack" class="initiative-attack"></label>
+                              <input type="text" class="form-control attack" name="attack" placeholder="">
+                         </div>
+                         <div class="col-sm-12">
+                              <div class="form-group">
+                                   <label for="exampleFormControlTextarea1"></label>
+                                   <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" placeholder="*You can shoot your bow 150 feet, or up to 600 feet with disadvantage on the attack roll."></textarea>
+                              </div>
+                         </div>
+                    </div><!-- ATK & Spellcasting End -->
+                    <br>
+                    <hr>
+                    <!-- Equipment Start -->
+                    <h5 class="card-title">EQUIPMENT</h5>
+                    <form>
+                         <div class="row">
+                              <div class="col-sm-4">
+                                   <h5 class="card-title">CP</h5>
+                                   <label for="cp" class="cp-label"></label>
+                                   <input type="text" class="form-control cp" name="cp" placeholder="">
+                              </div>
+                              <div class="col-sm-4">
+                                   <h5 class="card-title">SP</h5>
+                                   <label for="sp" class="sp-label"></label>
+                                   <input type="text" class="form-control sp" name="sp" placeholder="">
+                              </div>
+                              <div class="col-sm-4">
+                                   <h5 class="card-title">EP</h5>
+                                   <label for="ep" class="ep-label"></label>
+                                   <input type="text" class="form-control ep" name="ep" placeholder="">
+                              </div>
+                              <div class="col-sm-6">
+                                   <h5 class="card-title">GP</h5>
+                                   <label for="gp" class="gp-label"></label>
+                                   <input type="text" class="form-control gp" name="gp" placeholder="10">
+                              </div>
+                              <div class="col-sm-6">
+                                   <h5 class="card-title">PP</h5>
+                                   <label for="pp" class="pp-label"></label>
+                                   <input type="text" class="form-control pp" name="pp" placeholder="">
+                              </div>
+                              <hr>
+                              <div class="col-sm-12">
+                                   <div class="form-group">
+                                        <label for="exampleFormControlTextarea1"></label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="13" placeholder="Leather armor, bow, 20 arrows, sword, backpack, bedroll, mess kit, tinderbox, 10 torches, 10 days of rations, waterskin, 50 feet of hempen rope, carpenter's tools, shovel, iron pot, set of common clothes, pouch"></textarea>
+                                   </div>
+                              </div>
+                         </div>
+                    </form>
+               </div> <!-- Equipment End  -->
+               <!-- Character Personality Start -->
+               <div class="col-xs-12 col-sm-4">
+                    <div class="card bg-light">
+                         <div class="wrapper-1">
+                              <div class="card-body">
+                                   <h5 class="card-title card1">CHARACTER PERSONALITY</h5>
+                                   <form>
+                                        <div class="form-group">
+                                             <label class="label card1" for="exampleFormControlTextarea1">Personality Traits</label>
+                                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="When I put my mind to something, I follow through. Also, I use long words in an attempt to sound smarter."></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                             <label class="label card1" for="exampleFormControlTextarea1">Ideals</label>
+                                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Sincerity. It's no good pretending to be something I'm not."></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                             <label class="label card1" for="exampleFormControlTextarea1">Bonds</label>
+                                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="One day, Thundertree will be a prosperous town once again. A statue of me will stand in the town square."></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                             <label class="label card1" for="exampleFormControlTextarea1">Flaws</label>
+                                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="I'm convinced of the significance of my destiny, and blind to my shortcomings and the risk of failure."></textarea>
+                                        </div>
+                                   </form>
+                              </div>
+                         </div> <!-- Character Personality End -->
+                         <br/>
+                         <!-- Features & Traits Start -->
+                         <div class="card bg-light">
+                              <div class="wrapper-1">
+                                   <div class="card-body">
+                                        <h5 class="card-title card1">FEATURES & TRAITS</h5>
+                                        <form>
+                                             <div class="form-group">
+                                                  <label for="exampleFormControlTextarea1"></label>
+                                                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="39" placeholder="SECOND WIND: You have a limited well of stamina you can draw on to protect yourself from harm. You can use a bonus action to regain hit points equal to 1d10 + your fighter level. Once you use this feature, you must finish a short or long rest before you can use it again. FIGHTING STYLE (ARCHERY): You gain +2 bonus to attack rolls you make with ranged weapons. This bonus is already included in your attack with your bow. RUSTIC HOSPITALITY: Since you come from the ranks of the common folk, you fit in among them with ease. You can find a place to hide, rest, or recurperate among other commoners, unless you have shown yourself to be a danger to them. They shield you from the law, or anyone else searching for you, though they are unwilling to risk their lives for you."></textarea>
+                                             </div>
+                                        </form>
+                                   </div>
+                              </div>
+                         </div> <!-- Features & Traits End -->
+                    </div>
+               </div>
+               <br>
+               <hr>
+               <!-- Total Stats Start -->
+               <div class="jumbotron">
+                    <h5 class="card-title">TOTAL STATS</h5>
+                    <div class="row">
+                         <div class="col-sm-2">
+                              <input type="text" class="form-control totalStats" name="strength" placeholder="14">
+                              <label for="str" class="totalStats">Strength</label>
+                         </div>
+                         <div class="col-sm-2">
+                              <input type="text" class="form-control totalStats" name="dexterity" placeholder="16">
+                              <label for="dex" class="totalStats">Dexterity</label>
+                         </div>
+                         <div class="col-sm-2">
+                              <input type="text" class="form-control totalStats" name="constitution" placeholder="15">
+                              <label for="con" class="totalStats">Constitution </label>
+                         </div>
+                         <div class="col-sm-2">
+                              <input type="text" class="form-control totalStats" name="intelligence" placeholder="11">
+                              <label for="int" class="totalStats">Intelligence</label>
+                         </div>
+                         <div class="col-sm-2">
+                              <input type="text" class="form-control totalStats" name="wisdom" placeholder="13">
+                              <label for="wis" class="totalStats">Wisdom</label>
+                         </div>
+                         <div class="col-sm-2">
+                              <input type="text" class="form-control totalStats" name="charisma" placeholder="9">
+                              <label for="cha" class="totalStats">Charisma</label>
+                         </div>
+                    </div>
+               </div> <!-- Total Stats End -->
+          </div>
+          <a class="btn btn-primary btn-lg" href="" role="button" id="submitBtn">Save Character</a>
+          <script src="js/index.js"></script>
+          <hr>
+          <footer>
+               <!-- Footer Start -->
+               <div class="container-fluid padding">
+                    <div class="row text-center">
+                         <div class="col-md-12 social padding">
+                              <h5>&copy Dungeons & Dudes</h5>
+                         </div>
+                    </div>
+               </div>
+          </footer> <!-- Footer End -->
+     </div> <!-- End of Container -->
+
+</body>
+
+
+</html>
