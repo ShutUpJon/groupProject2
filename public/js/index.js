@@ -33,7 +33,7 @@ var $survival = $("#survival");
 var $passiveWisdom = $("#passivewisdom");
 var $proficiencies = $("#proficiencies");
 var $languages = $("#languages");
-var $armorClass = $("#armorclass");
+var $armorClass = $("#armor");
 var $initiative = $("#initiative");
 var $speed = $("#speed");
 var $maxHP = $("#maxhp");
@@ -162,18 +162,18 @@ var handleFormSubmit = function(event) {
     sleightOfHand: $sleightOfHand.val().trim(),
     stealth: $stealth.val().trim(),
     survival: $survival.val().trim(),
-    passiveWisdom: $passiveWisdom.val().trim(),
-    proficiencies: $proficiencies.val().trim(),
-    languages: $languages.val().trim(),
+    // passiveWisdom: $passiveWisdom.val().trim(),
+    // proficiencies: $proficiencies.val().trim(),
+    // languages: $languages.val().trim(),
     armorClass: $armorClass.val().trim(),
     initiative: $initiative.val().trim(),
     speed: $speed.val().trim(),
-    maxHP: $maxHP.val().trim(),
+    // maxHP: $maxHP.val().trim(),
     currentHP: $currentHP.val().trim(),
     tempHP: $tempHP.val().trim(),
     hitDice: $hitDice.val().trim(),
-    successes: $successes.val().trim(),
-    failures: $failures.val().trim(),
+    // successes: $successes.val().trim(),
+    // failures: $failures.val().trim(),
     weaponName1: $weaponName1.val().trim(),
     weaponAtk1: $weaponAtk1.val().trim(),
     weaponDmg1: $weaponDmg1.val().trim(),
@@ -188,15 +188,15 @@ var handleFormSubmit = function(event) {
     electrumPiece: $electrumPiece.val().trim(),
     goldPiece: $goldPiece.val().trim(),
     platinumPiece: $platinumPiece.val().trim(),
-    equipment: $equipment.val().trim(),
+    // equipment: $equipment.val().trim(),
     personalityTraits: $personalityTraits.val().trim(),
     ideals: $ideals.val().trim(),
     bonds: $bonds.val().trim(),
     flaws: $flaws.val().trim(),
     feature1: $feature1.val().trim(),
-    feature2: $feature2.val().trim(),
-    trait1: $trait1.val().trim(),
-    trait2: $trait2.val().trim()
+    // feature2: $feature2.val().trim(),
+    // trait1: $trait1.val().trim(),
+    // trait2: $trait2.val().trim()
 
 
   };
