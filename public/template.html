@@ -11,11 +11,11 @@
   <!-- CSS -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="stylesheet" href="../public/styles/styles.css">
   <!-- J Query -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
-  <link rel="shortcut icon" type="image/png" href="./img/favicon.png">
+  <link rel="shortcut icon" type="image/png" href="../public/img/favicon.png">
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,7 +27,7 @@
   <div class="container">
     <nav class="navbar navbar-expand-md navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"><img src="./img/logo.png"></a>
+        <a class="navbar-brand" href="index.html"><img src="../public/img/logo.png"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -156,16 +156,14 @@
                         <input type="text" class="form-control skills" name="acrobatics" id="acrobatics" placeholder="0">
                       </div>
                     </div>
-
-                  </div>
-                </li>
-                <li class="list-group-item">
-                  <div class="row">
-                    <div class="col">
-                      <label for="animalhandling" class="skills-label">Animal Handling (Wis)
-                      </label>
-                      <input type="text" class="form-control skills" name="animalhandling" id="animalHandling" placeholder="0">
-
+                  </li>
+                  <li class="list-group-item">
+                    <div class="row">
+                      <div class="col">
+                        <label for="animalhandling" class="skills-label">Animal Handling (Wis)
+                        </label>
+                        <input type="text" class="form-control skills" name="animalhandling" id="animalhandling" placeholder="0">
+                      </div>
                     </div>
                   </li>
                   <li class="list-group-item">
@@ -247,15 +245,13 @@
                         <input type="text" class="form-control skills" name="perception" id="perception" placeholder="0">
                       </div>
                     </div>
-
-                  </div>
-                </li>
-                <li class="list-group-item">
-                  <div class="row">
-                    <div class="col">
-                      <label for="acrobatics" class="skills-label">Performance (Cha)</label>
-                      <input type="text" class="form-control skills" name="performance" id="perform" placeholder="0">
-
+                  </li>
+                  <li class="list-group-item">
+                    <div class="row">
+                      <div class="col">
+                        <label for="acrobatics" class="skills-label">Performance (Cha)</label>
+                        <input type="text" class="form-control skills" name="performance" id="performance" placeholder="0">
+                      </div>
                     </div>
                   </li>
                   <li class="list-group-item">
@@ -334,20 +330,20 @@
             <form>
               <div class="form-group">
                 <label for="exampleFormControlTextarea1">Current Hit Points</label>
-                <textarea class="form-control" id="currenthp" rows="3" placeholder="Hit Point Maximum:"></textarea>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Hit Point Maximum:"></textarea>
               </div>
           </div>
           <div class="col-sm-6">
             <div class="form-group">
               <label for="exampleFormControlTextarea1">Temporary Hit Points</label>
-              <textarea class="form-control" id="temphp" rows="3"></textarea>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
           </div>
           </form>
           <div class="col-sm-6">
             <div class="form-group">
               <label for="exampleFormControlTextarea1">Hit Dice</label>
-              <textarea class="form-control" id="hitdice" rows="3" placeholder="Total:"></textarea>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Total: 1d10"></textarea>
             </div>
           </div>
           <div class="col-sm-6">
@@ -380,41 +376,41 @@
           <div class="col-sm-4">
             <h5 class="card-title">NAME</h5>
             <label for="initiative" class="initiative-label"></label>
-            <input type="text" class="form-control armor" name="initiative" id="weaponname1" placeholder="Sword">
+            <input type="text" class="form-control armor" name="initiative" placeholder="Sword">
           </div>
           <div class="col-sm-4">
             <h5 class="card-title">ATTACK</h5>
             <label for="initiative" class="initiative-label"></label>
-            <input type="text" class="form-control armor" name="initiative" id="weaponatk1" placeholder="+4">
+            <input type="text" class="form-control armor" name="initiative" placeholder="+4">
           </div>
           <div class="col-sm-4">
             <h5 class="card-title">DMG/TYPE</h5>
             <label for="initiative" class="initiative-label"></label>
-            <input type="text" class="form-control armor" name="initiative" id="weapondmg1" placeholder="2d6 + 2S">
+            <input type="text" class="form-control armor" name="initiative" placeholder="2d6 + 2S">
           </div>
           <div class="col-sm-4">
             <label for="initiative" class="initiative-label"></label>
-            <input type="text" class="form-control armor" name="initiative" id="weaponname2" placeholder="Bow">
+            <input type="text" class="form-control armor" name="initiative" placeholder="Bow">
           </div>
           <div class="col-sm-4">
             <label for="initiative" class="initiative-label"></label>
-            <input type="text" class="form-control armor" name="initiative" id="weaponatk2" placeholder="+7">
+            <input type="text" class="form-control armor" name="initiative" placeholder="+7">
           </div>
           <div class="col-sm-4">
             <label for="initiative" class="initiative-label"></label>
-            <input type="text" class="form-control armor" name="initiative" id="weapondmg2" placeholder="1d8 + 3P">
+            <input type="text" class="form-control armor" name="initiative" placeholder="1d8 + 3P">
           </div>
           <div class="col-sm-4">
             <label for="attack" class="attack-label"></label>
-            <input type="text" class="form-control attack" name="initiative" id="weaponname3" placeholder="">
+            <input type="text" class="form-control attack" name="initiative" placeholder="">
           </div>
           <div class="col-sm-4">
             <label for="attack" class="attack-label"></label>
-            <input type="text" class="form-control attack" name="attack" id="weaponatk3" placeholder="">
+            <input type="text" class="form-control attack" name="attack" placeholder="">
           </div>
           <div class="col-sm-4">
             <label for="attack" class="initiative-attack"></label>
-            <input type="text" class="form-control attack" name="attack" id="weapondmg3" placeholder="">
+            <input type="text" class="form-control attack" name="attack" placeholder="">
           </div>
           <div class="col-sm-12">
             <div class="form-group">
@@ -432,27 +428,27 @@
             <div class="col-sm-4">
               <h5 class="card-title">CP</h5>
               <label for="cp" class="cp-label"></label>
-              <input type="text" class="form-control cp" id="copperpiece" placeholder="">
+              <input type="text" class="form-control cp" name="cp" placeholder="">
             </div>
             <div class="col-sm-4">
               <h5 class="card-title">SP</h5>
               <label for="sp" class="sp-label"></label>
-              <input type="text" class="form-control sp" id="silverpiece" placeholder="">
+              <input type="text" class="form-control sp" name="sp" placeholder="">
             </div>
             <div class="col-sm-4">
               <h5 class="card-title">EP</h5>
               <label for="ep" class="ep-label"></label>
-              <input type="text" class="form-control ep" id="electrumpiece" placeholder="">
+              <input type="text" class="form-control ep" name="ep" placeholder="">
             </div>
             <div class="col-sm-6">
               <h5 class="card-title">GP</h5>
               <label for="gp" class="gp-label"></label>
-              <input type="text" class="form-control gp" id="goldpiece" placeholder="">
+              <input type="text" class="form-control gp" name="gp" placeholder="">
             </div>
             <div class="col-sm-6">
               <h5 class="card-title">PP</h5>
               <label for="pp" class="pp-label"></label>
-              <input type="text" class="form-control pp" id="platinumpiece" placeholder="">
+              <input type="text" class="form-control pp" name="pp" placeholder="">
             </div>
             <hr>
             <div class="col-sm-12">
@@ -467,39 +463,41 @@
       <!-- Character Personality Start -->
       <div class="col-xs-12 col-sm-4">
         <div class="card bg-light">
-
-          <div class="card-body">
-            <h5 class="card-title">CHARACTER PERSONALITY</h5>
-            <form>
-              <div class="form-group">
-                <label for="exampleFormControlTextarea1">Personality Traits</label>
-                <textarea class="form-control"  rows="3" id="personalitytraits" placeholder="When I put my mind to something..."></textarea>
-              </div>
-              <div class="form-group">
-                <label for="exampleFormControlTextarea1">Ideals</label>
-                <textarea class="form-control"  rows="3" id="ideals" placeholder="Sincerity. It's no good pretending to be something I'm not."></textarea>
-              </div>
-              <div class="form-group">
-                <label for="exampleFormControlTextarea1">Bonds</label>
-                <textarea class="form-control"  rows="3" id="bonds" placeholder="One day, Thundertree will be a prosperous town once again..."></textarea>
-              </div>
-              <div class="form-group">
-                <label for="exampleFormControlTextarea1">Flaws</label>
-                <textarea class="form-control" id="flaws" rows="3" placeholder="I'm convinced of the significance of my destiny, and blind to my shortcomings and the risk of failure."></textarea>
-              </div>
-            </form>
-          </div>
-        </div> <!-- Character Personality End -->
-        <br/>
-        <!-- Features & Traits Start -->
-        <div class="card bg-light">
-          <div class="card-body">
-            <h5 class="card-title">FEATURES & TRAITS</h5>
-            <form>
-              <div class="form-group">
-                <label for="exampleFormControlTextarea1"></label>
-                <textarea class="form-control" id="feature1" rows="39" placeholder=""></textarea>
-
+          <div class="wrapper-1">
+            <div class="card-body">
+              <h5 class="card-title card1">CHARACTER PERSONALITY</h5>
+              <form>
+                <div class="form-group">
+                  <label class="label card1" for="exampleFormControlTextarea1">Personality Traits</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="When I put my mind to something..."></textarea>
+                </div>
+                <div class="form-group">
+                  <label class="label card1" for="exampleFormControlTextarea1">Ideals</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Sincerity. It's no good pretending to be something I'm not."></textarea>
+                </div>
+                <div class="form-group">
+                  <label class="label card1" for="exampleFormControlTextarea1">Bonds</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="One day, Thundertree will be a prosperous town once again..."></textarea>
+                </div>
+                <div class="form-group">
+                  <label class="label card1" for="exampleFormControlTextarea1">Flaws</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="I'm convinced of the significance of my destiny, and blind to my shortcomings and the risk of failure."></textarea>
+                </div>
+              </form>
+            </div>
+          </div> <!-- Character Personality End -->
+          <br/>
+          <!-- Features & Traits Start -->
+          <div class="card bg-light">
+            <div class="wrapper-1">
+              <div class="card-body">
+                <h5 class="card-title card1">FEATURES & TRAITS</h5>
+                <form>
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1"></label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="39" placeholder=""></textarea>
+                  </div>
+                </form>
               </div>
             </div>
           </div> <!-- Features & Traits End -->
@@ -524,7 +522,7 @@
             <label for="con" class="totalStats">Constitution </label>
           </div>
           <div class="col-sm-2">
-            <input type="text" class="form-control totalStats" name="intelligence" placeholder="0">
+            <input type="text" class="form-control totalStats" name="intelligence" placeholder="">
             <label for="int" class="totalStats">Intelligence</label>
           </div>
           <div class="col-sm-2">
